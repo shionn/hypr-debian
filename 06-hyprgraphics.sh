@@ -18,9 +18,7 @@ exit
 mkdir ${project}-${version}
 cd ${project}-${version}
 mkdir -p usr/lib/x86_64-linux-gnu/
-mv ../build/libhyprcursor.so* usr/lib/x86_64-linux-gnu/
-mkdir -p usr/bin/
-mv ../build/hyprcursor-util usr/bin/
+mv ../build/libhyprgraphics.so* usr/lib/x86_64-linux-gnu/
 
 mkdir DEBIAN
 
