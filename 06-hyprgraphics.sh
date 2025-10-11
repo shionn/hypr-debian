@@ -2,7 +2,7 @@
 version="0.2.0"
 project="hyprgraphics"
 
-apt install libcairo2-dev libpixman-1-dev libmagic-dev libjpeg-dev -y
+apt install libcairo2-dev libpixman-1-dev libmagic-dev libjpeg-dev libwebp-dev librsvg2-dev -y
 
 rm -Rf $project*	
 
@@ -32,7 +32,7 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: hyprutils, libcario2, libmagic-mgc, libmagic1t64, libjpeg62-turbo
+Depends: hyprutils, libcario2, libmagic-mgc, libmagic1t64, libjpeg62-turbo, libwebp7, librsvg2-2
 Description: Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
