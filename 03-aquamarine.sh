@@ -2,7 +2,7 @@
 version="0.9.5"
 project="aquamarine"
 
-apt install libgles2-mesa-dev libseat-dev libinput-dev wayland-protocols libwayland-dev libpixman-1-dev libdrm-dev libgbm-dev libdisplay-info-dev hwdata -y
+apt install libgles2-mesa-dev libseat-dev libinput-dev wayland-protocols libwayland-dev libpixman-1-dev libdrm-dev libgbm-dev libdisplay-info-dev hwdata libpugixml-dev -y
 
 rm -Rf $project*	
 
@@ -13,12 +13,10 @@ cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PRE
 cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
 #cmake --install build
 
-exit
-
 mkdir ${project}-${version}
 cd ${project}-${version}
 mkdir -p usr/bin/x86_64-linux-gnu/
-mv ../build/libhyprutils.so* usr/bin/x86_64-linux-gnu/
+mv ../build/libaquamarine.so* usr/bin/x86_64-linux-gnu/
 
 mkdir DEBIAN
 
@@ -30,12 +28,10 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: hyprwayland-scanner, hyprutils, libgles2, libseat1, libinput10, wayland-protocols, libwayland-bin, libwayland-cursor0, libwayland-egl1, libpixman-1-0, libdrm-amdgpu1, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libgbm1, libdisplay-info2, hwdata 
+Depends: hyprwayland-scanner, hyprutils, libgles2, libseat1, libinput10, wayland-protocols, libwayland-bin, libwayland-cursor0, libwayland-egl1, libdrm-amdgpu1, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libgbm1, libdisplay-info2, hwdata 
 Description: Aquamarine is a very light linux rendering backend library. It provides basic abstractions for an application to render on a Wayland session (in a window) or a native DRM session.
-
-It is agnostic of the rendering API (Vulkan/OpenGL) and designed to be lightweight, performant, and minimal.
-
-Aquamarine provides no bindings for other languages. It is C++-only." >> DEBIAN/control
+ It is agnostic of the rendering API (Vulkan/OpenGL) and designed to be lightweight, performant, and minimal.
+ Aquamarine provides no bindings for other languages. It is C++-only." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ${project}
