@@ -2,11 +2,11 @@
 version="0.51.1"
 project="Hyprland"
 
-#apt install libcairo2-dev libpixman-1-dev libmagic-dev libjpeg-dev libwebp-dev librsvg2-dev -y
+apt install libgles2-mesa-dev -y
 
-rm -Rf $project*	
+#rm -Rf $project*	
 
-git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
+#git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
 cd ${project} 
 
 make all
@@ -29,7 +29,7 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: aquamarine, hyprlang, hyprcursor, hyprutils, hyprgraphics, hyprwayland-scanner
+Depends: aquamarine (>=0.9.3), hyprlang (>=0.3.2), hyprcursor (>=0.1.7), hyprutils (>=0.8.2), hyprgraphics (>=0.1.3), hyprwayland-scanner (>=0.3.10)
 Description: Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
  It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other compositors and more..." >> DEBIAN/control
 
