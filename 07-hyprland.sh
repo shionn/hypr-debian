@@ -2,11 +2,11 @@
 version="0.51.1"
 project="Hyprland"
 
-apt install libgles2-mesa-dev -y
+apt install libgles2-mesa-dev libcairo2-dev libinput-dev wayland-protocols libdrm-dev libpixman-1-dev -y
 
 #rm -Rf $project*	
 
-#git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
+##git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
 cd ${project} 
 
 make all
