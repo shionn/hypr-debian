@@ -2,22 +2,45 @@
 version="0.51.1"
 project="Hyprland"
 
-apt install libgles2-mesa-dev libcairo2-dev libinput-dev wayland-protocols libdrm-dev libpixman-1-dev libxkbcommon-dev libre2-dev libwayland-dev libgbm-dev libpango1.0-dev libxcursor-dev libxcb-xfixes0-dev libxcb-icccm4-dev libxcb-composite0-dev libxcb-res0-dev libxcb-errors-dev libtomlplusplus-dev libpugixml-dev -y
+apt install libgles2-mesa-dev libcairo2-dev libinput-dev wayland-protocols libdrm-dev libpixman-1-dev libxkbcommon-dev libre2-dev libwayland-dev libgbm-dev libpango1.0-dev libxcursor-dev libxcb-xfixes0-dev libxcb-icccm4-dev libxcb-composite0-dev libxcb-res0-dev libxcb-errors-dev libtomlplusplus-dev libpugixml-dev libseat-dev libzip-dev librsvg2-dev librsvg2-dev libwebp-dev libglaze-dev -y
 
-#rm -Rf $project*	
+rm -Rf $project*	
 
-##git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
+git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
 cd ${project} 
 
 make all
 #make install
 
-exit
-
 mkdir ${project}-${version}
 cd ${project}-${version}
-mkdir -p usr/lib/x86_64-linux-gnu/
-mv ../build/libhyprgraphics.so* usr/lib/x86_64-linux-gnu/
+
+mkdir -p usr/local/bin/
+mkdir -p usr/local/share/bash-completion/completions
+mkdir -p usr/local/share/hypr/
+mkdir -p usr/local/share/fish/vendor_completions.d/
+mkdir -p usr/local/share/man/man1/
+mkdir -p usr/local/share/wayland-sessions/
+mkdir -p usr/local/share/xdg-desktop-portal/
+mkdir -p usr/local/share/zsh/site-functions/
+cp ../build/Hyprland                usr/local/bin/
+cp ../build/hyprctl/hyprctl         usr/local/bin/
+cp ../build/hyprpm/hyprpm           usr/local/bin/
+cp ../hyprctl/hyprctl.bash          usr/local/share/bash-completion/completions/hyprctl
+cp ../hyprpm/hyprpm.bash            usr/local/share/bash-completion/completions/hyprpm
+cp ../hyprctl/*.fish                usr/local/share/fish/vendor_completions.d/
+cp ../hyprpm/*.fish                 usr/local/share/fish/vendor_completions.d/
+cp ../hyprctl/hyprctl.zsh           usr/local/share/zsh/site-functions/_hyprctl
+cp ../hyprpm/hyprpm.zsh             usr/local/share/zsh/site-functions/_hyprpm
+cp ../assets/install/*.png          usr/local/share/hypr/
+cp ../example/hyprland.conf         usr/local/share/hypr/
+cp ../docs/Hyprland.1               usr/local/share/man/man1/ 
+cp ../docs/hyprctl.1                usr/local/share/man/man1/ 
+cp ../example/hyprland.desktop      usr/local/share/wayland-sessions/
+cp ../systemd/hyprland-uwsm.desktop usr/local/share/wayland-sessions/
+cp ../assets/hyprland-portals.conf  usr/local/share/xdg-desktop-portal/
+
+
 
 mkdir DEBIAN
 
