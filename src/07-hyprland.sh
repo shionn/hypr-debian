@@ -1,6 +1,6 @@
 #!/bin/bash
 version="0.51.1"
-project="Hyprland"
+project="hyprland"
 
 apt install libgles2-mesa-dev libcairo2-dev libinput-dev wayland-protocols libdrm-dev libpixman-1-dev libxkbcommon-dev libre2-dev libwayland-dev libgbm-dev libpango1.0-dev libxcursor-dev libxcb-xfixes0-dev libxcb-icccm4-dev libxcb-composite0-dev libxcb-res0-dev libxcb-errors-dev libtomlplusplus-dev libpugixml-dev libseat-dev libzip-dev librsvg2-dev librsvg2-dev libwebp-dev libglaze-dev -y
 
