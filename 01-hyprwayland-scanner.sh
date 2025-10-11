@@ -23,7 +23,7 @@ echo "Source: ${project}
 Section: graphics
 Priority: optional
 Maintainer: Shionn<shionn@gmail.com>
-Homepage: https://github.com/hyprwm/hyprwayland-scanner
+Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
@@ -32,7 +32,7 @@ Description: A Hyprland implementation of wayland-scanner, in and for C++." >> D
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ${project}
-Source: https://github.com/hyprwm/hyprwayland-scanner/tree/v0.4.5
+Source: https://github.com/hyprwm/${project}/tree/v${version}
 Files: *
 Copyright: 2024, Hypr Development
 Licence: BSD 3-Clause License" >> DEBIAN/copyright

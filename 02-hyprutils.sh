@@ -16,8 +16,8 @@ cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getc
 
 mkdir ${project}-${version}
 cd ${project}-${version}
-mkdir -p usr/bin
-cp ../build/hyprwayland-scanner usr/bin/
+mkdir -p usr/bin/x86_64-linux-gnu/
+mv ../build/libhyprutils.so* usr/bin/x86_64-linux-gnu/
 
 mkdir DEBIAN
 
@@ -25,16 +25,16 @@ echo "Source: ${project}
 Section: graphics
 Priority: optional
 Maintainer: Shionn<shionn@gmail.com>
-Homepage: https://github.com/hyprwm/hyprwayland-scanner
+Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
 Depends: libpixman-1-0
-Description: A Hyprland implementation of wayland-scanner, in and for C++." >> DEBIAN/control
+Description: Hyprutils is a small C++ library for utilities used across the Hypr* ecosystem." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ${project}
-Source: https://github.com/hyprwm/hyprwayland-scanner/tree/v0.4.5
+Source: https://github.com/hyprwm/${project}/tree/v${version}
 Files: *
 Copyright: 2024, Hypr Development
 Licence: BSD 3-Clause License" >> DEBIAN/copyright
