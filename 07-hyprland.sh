@@ -1,17 +1,18 @@
 #!/bin/bash
-version="0.2.0"
-project="hyprgraphics"
+version="0.51.1"
+project="Hyprland"
 
-apt install libcairo2-dev libpixman-1-dev libmagic-dev libjpeg-dev libwebp-dev librsvg2-dev -y
+#apt install libcairo2-dev libpixman-1-dev libmagic-dev libjpeg-dev libwebp-dev librsvg2-dev -y
 
 rm -Rf $project*	
 
 git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
 cd ${project} 
 
-cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
-cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf NPROCESSORS_CONF`
-#cmake --install build
+make all
+#make install
+
+exit
 
 mkdir ${project}-${version}
 cd ${project}-${version}
@@ -28,8 +29,9 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: hyprutils, libcario2, libmagic-mgc, libmagic1t64, libjpeg62-turbo, libwebp7, librsvg2-2
-Description: Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem." >> DEBIAN/control
+Depends: aquamarine, hyprlang, hyprcursor, hyprutils, hyprgraphics, hyprwayland-scanner
+Description: Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
+ It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other compositors and more..." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ${project}
