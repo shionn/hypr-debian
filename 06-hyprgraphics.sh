@@ -1,8 +1,8 @@
 #!/bin/bash
-version="0.1.13"
-project="hyprcursor"
+version="0.2.0"
+project="hyprgraphics"
 
-apt install libcairo2-dev libzip-dev librsvg2-dev libtomlplusplus-dev -y
+apt install libcairo2-dev libpixman-1-dev libmagic-dev libjpeg-dev -y
 
 rm -Rf $project*	
 
@@ -10,8 +10,10 @@ git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${pr
 cd ${project} 
 
 cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
-cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
+cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf NPROCESSORS_CONF`
 #cmake --install build
+
+exit
 
 mkdir ${project}-${version}
 cd ${project}-${version}
@@ -30,8 +32,8 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: hyprlang (>= 0.4.2), libcairo2, libzip5, librsvg2-2, libtomlplusplus3t64
-Description: The hyprland cursor format, library and utilities." >> DEBIAN/control
+Depends: hyprutils, libcario2, libmagic-mgc, libmagic1t64, libjpeg62-turbo
+Description: Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ${project}
