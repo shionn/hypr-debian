@@ -1,8 +1,8 @@
 #!/bin/bash
-version="0.1.s134"
+version="0.1.13"
 project="hyprcursor"
 
-#apt install libpugixml-dev -y
+apt install libcairo2-dev libzip-dev librsvg2-dev libtomlplusplus-dev -y
 
 rm -Rf $project*	
 
@@ -10,13 +10,15 @@ git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${pr
 cd ${project} 
 
 cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
-cmake --build ./build --config Release --target hyprlang -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
+cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
 #cmake --install build
 
 mkdir ${project}-${version}
 cd ${project}-${version}
 mkdir -p usr/lib/x86_64-linux-gnu/
-mv ../build/libhyprlang.so* usr/lib/x86_64-linux-gnu/
+mv ../build/libhyprcursor.so* usr/lib/x86_64-linux-gnu/
+mkdir -p usr/bin/
+mv ../build/hyprcursor-util usr/bin/
 
 mkdir DEBIAN
 
@@ -28,9 +30,8 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: 
-Description: The hypr configuration language is an extremely efficient, yet easy to work with, configuration language for linux applications.
- It's user-friendly, easy to grasp, and easy to implement." >> DEBIAN/control
+Depends: hyprlang, libcairo2, libzip5, librsvg2-2, libtomlplusplus3t64
+Description: The hyprland cursor format, library and utilities." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ${project}

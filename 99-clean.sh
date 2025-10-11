@@ -1,4 +1,4 @@
 #!/bin/bash
-apt remove libpugixml-dev libpixman-1-dev libgles2-mesa-dev libseat-dev libinput-dev wayland-protocols libwayland-dev libdrm-dev libgbm-dev libdisplay-info-dev hwdata -y
+apt remove libpugixml-dev libpixman-1-dev libgles2-mesa-dev libseat-dev libinput-dev wayland-protocols libwayland-dev libdrm-dev libgbm-dev libdisplay-info-dev hwdata libcairo2-dev libzip-dev libtomlplusplus-dev -y
 apt autoremove -y
 
