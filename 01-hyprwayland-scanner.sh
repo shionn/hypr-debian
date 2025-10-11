@@ -5,15 +5,20 @@ project="hyprwayland-scanner"
 apt install libpugixml-dev -y
 
 rm -Rf $project*	
-#mkdir ${project}-${version}
-#cd ${project}-${version}
 
-git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}-${version}
+git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
+cd ${project} 
 
-#cd ${project} 
-#cmake -DCMAKE_INSTALL_PREFIX=/usr -B build
-#cmake --build build -j `nproc`
-#cd ..
+cmake -DCMAKE_INSTALL_PREFIX=/usr -B build
+cmake --build build -j `nproc`
+
+mkdir ${project}-${version}
+cd ${project}-${version}
+mkdir -p usr/bin
+cp ../build/hyprwayland-scanner usr/bin/
+
+
+
 
 mkdir debian
 
@@ -67,7 +72,5 @@ Licence: BSD 3-Clause License
 Files: *
 Copyright: 2024, Hypr Development" > debian/copyright
 
-echo "13" > debian/compat
 
-debuild -us -uc
 
