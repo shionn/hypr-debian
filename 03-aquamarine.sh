@@ -28,7 +28,7 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: hyprwayland-scanner, hyprutils (>=0.8.0), libgles2, libseat1, libinput10, wayland-protocols, libwayland-bin, libwayland-cursor0, libwayland-egl1, libdrm-amdgpu1, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libgbm1, libdisplay-info2, hwdata 
+Depends: hyprwayland-scanner (>=0.4.0), hyprutils (>=0.8.0), libgles2, libseat1i (>=0.8.0), libinput10 (>=1.26.0), wayland-protocols, libwayland-bin, libwayland-cursor0, libwayland-egl1, libdrm-amdgpu1, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libgbm1, libdisplay-info2, hwdata 
 Description: Aquamarine is a very light linux rendering backend library. It provides basic abstractions for an application to render on a Wayland session (in a window) or a native DRM session.
  It is agnostic of the rendering API (Vulkan/OpenGL) and designed to be lightweight, performant, and minimal.
  Aquamarine provides no bindings for other languages. It is C++-only." >> DEBIAN/control

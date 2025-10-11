@@ -28,7 +28,7 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: hyprutils
+Depends: hyprutils (>=0.7.1)
 Description: The hypr configuration language is an extremely efficient, yet easy to work with, configuration language for linux applications.
  It's user-friendly, easy to grasp, and easy to implement." >> DEBIAN/control
 

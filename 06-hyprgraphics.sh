@@ -11,7 +11,7 @@ cd ${project}
 
 cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
 cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf NPROCESSORS_CONF`
-#cmake --install build
+cmake --install build
 
 mkdir ${project}-${version}
 cd ${project}-${version}
@@ -28,7 +28,7 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: hyprutils, libcario2, libmagic-mgc, libmagic1t64, libjpeg62-turbo, libwebp7, librsvg2-2
+Depends: hyprutils, libcario2, libmagic-mgc, libmagic1t64, libjpeg62-turbo, libwebp7, librsvg2-2, libjpeg62-turbo
 Description: Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
