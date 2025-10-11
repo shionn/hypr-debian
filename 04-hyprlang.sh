@@ -13,12 +13,10 @@ cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PRE
 cmake --build ./build --config Release --target hyprlang -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
 #cmake --install build
 
-exit
-
 mkdir ${project}-${version}
 cd ${project}-${version}
-mkdir -p usr/bin
-cp ../build/hyprwayland-scanner usr/bin/
+mkdir -p usr/lib/x86_64-linux-gnu/
+mv ../build/libhyprlang.so* usr/lib/x86_64-linux-gnu/
 
 mkdir DEBIAN
 
@@ -30,7 +28,7 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: 
+Depends: hyprutils
 Description: The hypr configuration language is an extremely efficient, yet easy to work with, configuration language for linux applications.
  It's user-friendly, easy to grasp, and easy to implement." >> DEBIAN/control
 
