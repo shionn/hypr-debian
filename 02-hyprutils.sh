@@ -16,8 +16,8 @@ cmake --install build
 
 mkdir ${project}-${version}
 cd ${project}-${version}
-mkdir -p usr/bin/x86_64-linux-gnu/
-mv ../build/libhyprutils.so* usr/bin/x86_64-linux-gnu/
+mkdir -p usr/lib/x86_64-linux-gnu/
+mv ../build/libhyprutils.so* usr/lib/x86_64-linux-gnu/
 
 mkdir DEBIAN
 

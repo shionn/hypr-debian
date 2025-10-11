@@ -15,8 +15,8 @@ cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getc
 
 mkdir ${project}-${version}
 cd ${project}-${version}
-mkdir -p usr/bin/x86_64-linux-gnu/
-mv ../build/libaquamarine.so* usr/bin/x86_64-linux-gnu/
+mkdir -p usr/lib/x86_64-linux-gnu/
+mv ../build/libaquamarine.so* usr/lib/x86_64-linux-gnu/
 
 mkdir DEBIAN
 
