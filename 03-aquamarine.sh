@@ -2,7 +2,7 @@
 version="0.9.5"
 project="aquamarine"
 
-#apt install libpixman-1-dev -y
+apt install libgles2-mesa-dev -y
 
 rm -Rf $project*	
 
@@ -30,7 +30,7 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: libpixman-1-0
+Depends: libgles2, hyprwayland-scanner
 Description: Aquamarine is a very light linux rendering backend library. It provides basic abstractions for an application to render on a Wayland session (in a window) or a native DRM session.
 
 It is agnostic of the rendering API (Vulkan/OpenGL) and designed to be lightweight, performant, and minimal.
