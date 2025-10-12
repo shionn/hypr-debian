@@ -7,8 +7,10 @@ Il faut avoir activer les repos **forky (testing)** ou **sid(unstable)**.
 # Installation 
 
 ~~~bash
-
-
+wget https://shionn.github.io/hypr-debian/pool/main/h/hypr-debian-keyring/hypr-debian-keyring_1.0.0_all.deb
+sudo apt install hypr-debian-keyring_1.0.0_all.deb
+sudo apt update
+sudo apt install hyprland
 ~~~
 
 # Historique récent
@@ -31,6 +33,7 @@ Pour avoir le fingerprint : `gpg --list-secret-key` et recuperer le truc dans pu
 
 # Lien
 
-(https://github.com/hyprwm)[https://github.com/hyprwm]
+- [Le repo officiel de Hyperland](https://github.com/hyprwm)
+- [Mon Blog](https://shionn.github.io)
 
 

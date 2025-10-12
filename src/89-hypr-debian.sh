@@ -25,7 +25,7 @@ mkdir -p usr/share/keyrings
 gpg --export-options export-minimal --export $1 > usr/share/keyrings/${project}.pgp
 
 mkdir -p etc/apt/sources.list.d
-echo "deb [signed-by=/usr/share/keyrings/${project}.pgp] http://192.168.10.140/ forky main" > etc/apt/sources.list.d/${project}.list
+echo "deb [signed-by=/usr/share/keyrings/${project}.pgp] https://shionn.github.io/hypr-debian/ forky main" > etc/apt/sources.list.d/${project}.list
 
 cd ..
 
