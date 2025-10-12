@@ -2,16 +2,16 @@ Package: aquamarine
 Source: aquamarine
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/hyprwm/aquamarine
-Version: 0.9.5
+Version: 0.9.5-1
 Architecture: amd64
-Depends: hyprwayland-scanner (>=0.4.0), hyprutils (>=0.8.0), libgles2, libseat1 (>=0.8.0), libinput10 (>=1.26.0), wayland-protocols, libwayland-bin, libwayland-cursor0, libwayland-egl1, libdrm-amdgpu1, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libgbm1, libdisplay-info2, hwdata 
+Depends: hyprwayland-scanner (>=0.4.0), hyprutils (>=0.8.0), libgles2, libgles1, libseat1 (>=0.8.0), libinput10 (>=1.26.0), wayland-protocols, libwayland-bin, libwayland-cursor0, libwayland-egl1, libdrm-amdgpu1, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libgbm1, libdisplay-info2, hwdata 
 Priority: optional
 Section: graphics
-Filename: pool/main/a/aquamarine/aquamarine_0.9.5_amd64.deb
-Size: 364428
-SHA256: 4a8bd991c9c4c7fc183ba348693ff7ece6c778b92ba5aba76e697f9a190c024e
-SHA1: 0c6f7d3ffb69bd044cb695419ca814895f308466
-MD5sum: e2a1541e17487ac267ae09426c1344a0
+Filename: pool/main/a/aquamarine/aquamarine_0.9.5-1_amd64.deb
+Size: 364172
+SHA256: 7a7e434228eb7dbdb607b730051498f68953c14ba7502e154aaf029515428340
+SHA1: d962cb562bb64c776d9265cde1972bd97f1b0517
+MD5sum: 8fca23e290cb833adf70ca3efabb58a1
 Description: Aquamarine is a very light linux rendering backend library. It provides basic abstractions for an application to render on a Wayland session (in a window) or a native DRM session.
  It is agnostic of the rendering API (Vulkan/OpenGL) and designed to be lightweight, performant, and minimal.
  Aquamarine provides no bindings for other languages. It is C++-only.
@@ -65,16 +65,16 @@ Package: hyprland
 Source: hyprland
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/hyprwm/hyprland
-Version: 0.51.1
+Version: 0.51.1-1
 Architecture: amd64
-Depends: aquamarine (>=0.9.3), hyprlang (>=0.3.2), hyprcursor (>=0.1.7), hyprutils (>=0.8.2), hyprgraphics (>=0.1.3), hyprwayland-scanner (>=0.3.10), libxkbcommon0, libre2-11, libgbm1, pango1.0-tools, libxcursor1, libxcb-xfixes0, libxcb-icccm4, libxcb-composite0, libxcb-res0, libxcb-errors0
+Depends: aquamarine (>=0.9.3), hyprlang (>=0.3.2), hyprcursor (>=0.1.7), hyprutils (>=0.8.2), hyprgraphics (>=0.1.3), hyprwayland-scanner (>=0.3.10), libxkbcommon0, libre2-11, libgbm1, pango1.0-tools, libxcursor1, libxcb-xfixes0, libxcb-icccm4, libxcb-composite0, libxcb-res0, libxcb-errors0, libwayland-bin
 Priority: optional
 Section: graphics
-Filename: pool/main/h/hyprland/hyprland_0.51.1_amd64.deb
-Size: 49399012
-SHA256: 51a228321efde64d8fe54123f61d2961bd78515466cf7b8020b91c42a5cb10e8
-SHA1: a2741499e6e04e2e8e396cee239dfb4ba7c1ec66
-MD5sum: 5720fbce2178bb74b2cbc056acf34206
+Filename: pool/main/h/hyprland/hyprland_0.51.1-1_amd64.deb
+Size: 49401476
+SHA256: b412698963c57ed2f870edb485f3c7bb854331d5d26b479e75490b9ef936240b
+SHA1: ab99ba9e13b38b7e2274f37799ad591d04df11bb
+MD5sum: d475e299b414d80a90e9b0aa0fb75f9e
 Description: Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
  It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other compositors and more...
 
