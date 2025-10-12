@@ -17,13 +17,12 @@ cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getc
 cmake --install build
 
 #mkdir ${project}-${version}
-#cd ${project}-${version}
+cd ${project}-${version}
 #mkdir -p usr/lib/x86_64-linux-gnu/qt6/
 #mv ../build/src/style/impl/libhyprland-quick-style-impl.so  usr/lib/
 #mv ../build/src/style/libhyprland-quick-style.so            usr/lib/
 #mv ../build/qml usr/lib/x86_64-linux-gnu/qt6/
 
-exit
 mkdir DEBIAN
 
 echo "Source: ${project}
