@@ -6,16 +6,22 @@ Attention je ne suis pas un spécialiste de la construction de paquets, tout n'e
 # Installation 
 
 ~~~bash
+
 ~~~
 
 # Construction 
+
 Pour reconstruire votre repo executer les scripts present dans src dans l'ordre des index. 
 
 ~~~bash
 ./src/00-....
-....
+...
+./src/89-... <fingerprint>
+...
 ./src/99-....
 ~~~ 
+
+Pour avoir le fingerprint : `gpg --list-secret-key` et recuperer le truc dans pub.
 
 # Lien
 
