@@ -2,10 +2,10 @@
 
 mkdir -p docs/conf
 
-echo "Origin: todo.com
-Label: todo.com
+echo "Origin: shionn.github.io/hypr-debian
+Label: shionn.github.io/hypr-debian
 Codename: forky
-Architectures: amd64
+Architectures: amd64 i386
 Components: main
 Description: Hyprland repository by shionn
 SignWith: yes" > docs/conf/distributions
