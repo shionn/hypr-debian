@@ -19,6 +19,8 @@ sudo apt install hyprland
 - hyprcursor : 0.1.13
 - hyprgraphics : 0.2.0
 - **hyprland : 0.51.1**
+- hyprland-qt-support : 0.1.0
+- hyprland-qtutils : 0.1.5
 - hyprlang : 0.6.4
 - hyprutils : 0.10.0
 - hyprwayland-scanner : 0.4.5
