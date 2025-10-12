@@ -78,6 +78,38 @@ MD5sum: 5720fbce2178bb74b2cbc056acf34206
 Description: Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
  It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other compositors and more...
 
+Package: hyprland-qt-support
+Source: hyprland-qt-support
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprland-qt-support
+Version: 0.1.0
+Architecture: amd64
+Depends: hyprlang (>=0.6.0), qt6-wayland, qml6-module-qtcore, qml6-module-qtquick-layouts
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprland-qt-support/hyprland-qt-support_0.1.0_amd64.deb
+Size: 95068
+SHA256: f581225fa6f98fe4d80157b4eeca93b6037a3db03e94fadf09563a33d01e9856
+SHA1: 078e1fb000b3fcf1dae57dd819b4c4f2829eaf04
+MD5sum: be6e84ac6b96bda7ea2135fc62da1c03
+Description: A qt6 qml style provider for hypr* apps.
+
+Package: hyprland-qtutils
+Source: hyprland-qtutils
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprland-qtutils
+Version: 0.1.5
+Architecture: amd64
+Depends: hyprland-qt-support
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprland-qtutils/hyprland-qtutils_0.1.5_amd64.deb
+Size: 112372
+SHA256: 2392ad5619ea959ea3825c1726cc55c9856a519e482c6e0c436356a7a03091a2
+SHA1: 9c7510a26b85356e34bf970ed779bd390eb06248
+MD5sum: 434ec370cc341bbe6846bc0f88b5aea5
+Description: some qt/qml utilities that might be used by various hypr* apps.
+
 Package: hyprlang
 Source: hyprlang
 Maintainer: Shionn<shionn@gmail.com>
