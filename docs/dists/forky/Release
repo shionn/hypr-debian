@@ -1,27 +1,27 @@
 Origin: shionn.github.io/hypr-debian
 Label: shionn.github.io/hypr-debian
 Codename: forky
-Date: Sun, 12 Oct 2025 17:05:49 UTC
+Date: Sun, 12 Oct 2025 18:58:18 UTC
 Architectures: amd64 i386
 Components: main
 Description: Hyprland repository by shionn
 MD5Sum:
- de00589c72edfc37b3bcb7bcb0f066ba 6816 main/binary-amd64/Packages
- 093b258282c5b873a17ef5425bc37c80 2605 main/binary-amd64/Packages.gz
+ 3aedcae3a0356b3bcb23ffdb8e397646 6825 main/binary-amd64/Packages
+ f76baa16990a802c54fdd4efb2abefa3 2606 main/binary-amd64/Packages.gz
  26139d7d44e07992b18e4ebd66e55521 112 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
  faac9f56db77e417679fbc43179a435c 151 main/binary-i386/Release
 SHA1:
- 2e38ef07cc148ebdecae259cf036628da61e6f4b 6816 main/binary-amd64/Packages
- 1190145bb0ff469e9c14903b3ba6d24d3fbe4041 2605 main/binary-amd64/Packages.gz
+ dfb4a4bb54d61f6e39b4f4a8cf14174366ea3508 6825 main/binary-amd64/Packages
+ b46cc645ecdbe42ce627ae99b907d748306cc2f1 2606 main/binary-amd64/Packages.gz
  1b74055f803db734be98a3cdba8ec9d9a3b220a2 112 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
  f5bd68a1b1f4def144242b7c138a51511fb0e476 151 main/binary-i386/Release
 SHA256:
- 1adb019d6ad4d506b7fa0f51dc99379cfb488ef37b2b37e085d1c4b1879edd76 6816 main/binary-amd64/Packages
- 478d3777390b7f951a49c98ed34052da7ba10d9f77253cc641ee3026b49015cf 2605 main/binary-amd64/Packages.gz
+ 0b11a80b9e71ebd82dfafe4cb0f7d1644bd7b6c11c634fcc266fca552122bb68 6825 main/binary-amd64/Packages
+ 4fd6369681a48593c9009a919523c0633b6de1c17f3680aff16609c078bed98e 2606 main/binary-amd64/Packages.gz
  d5637b93e5e815d7e7e8b6c046a00e97b3ad2eb1d13df35bea852e40251b7ed4 112 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
