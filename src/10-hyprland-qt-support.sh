@@ -10,18 +10,20 @@ rm -Rf $project*
 git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
 cd ${project} 
 
-mkdir ${project}-${version}
-cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=${project}-${version} -DINSTALL_QML_PREFIX=/lib/x86_64-linux-gnu/qt6/qml -S . -B ./build
-#cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -DINSTALL_QML_PREFIX=/lib/x86_64-linux-gnu/qt6/qml -S . -B ./build
+#mkdir ${project}-${version}
+#cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=${project}-${version} -DINSTALL_QML_PREFIX=/lib/x86_64-linux-gnu/qt6/qml -S . -B ./build
+cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -DINSTALL_QML_PREFIX=/lib/x86_64-linux-gnu/qt6/qml -S . -B ./build
 cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf NPROCESSORS_CONF`
 cmake --install build
 
-#mkdir ${project}-${version}
+mkdir ${project}-${version}
 cd ${project}-${version}
-#mkdir -p usr/lib/x86_64-linux-gnu/qt6/
-#mv ../build/src/style/impl/libhyprland-quick-style-impl.so  usr/lib/
-#mv ../build/src/style/libhyprland-quick-style.so            usr/lib/
-#mv ../build/qml usr/lib/x86_64-linux-gnu/qt6/
+mkdir -p usr/lib/x86_64-linux-gnu/qt6/
+mv ../build/src/style/impl/libhyprland-quick-style-impl.so  usr/lib/
+mv ../build/src/style/libhyprland-quick-style.so            usr/lib/
+mv ../build/qml usr/lib/x86_64-linux-gnu/qt6/
+rm usr/lib/x86_64-linux-gnu/qt6/qml/org/hyprland/style/hyprland-quick-style_qml_module_dir_map.qrc
+rm usr/lib/x86_64-linux-gnu/qt6/qml/org/hyprland/style/impl/hyprland-quick-style-impl_qml_module_dir_map.qrc
 
 mkdir DEBIAN
 

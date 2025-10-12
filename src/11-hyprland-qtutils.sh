@@ -2,7 +2,7 @@
 version="0.1.5"
 project="hyprland-qtutils"
 
-#apt install libcairo2-dev libpixman-1-dev libmagic-dev libjpeg-dev libwebp-dev librsvg2-dev -y
+apt install qt6-base-dev qt6-declarative-dev qt6-wayland-dev qt6-wayland-private-dev qt6-base-private-dev -y
 
 cd build
 rm -Rf $project*	
@@ -12,16 +12,20 @@ cd ${project}
 
 cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
 cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf NPROCESSORS_CONF`
-#cmake --install build
 
-exit 
+cmake --install build
 
 mkdir ${project}-${version}
 cd ${project}-${version}
-mkdir -p usr/lib/x86_64-linux-gnu/
-mv ../build/libhyprgraphics.so* usr/lib/x86_64-linux-gnu/
+mkdir -p usr/bin
+
+mv ../build/utils/dialog/hyprland-dialog               usr/bin/
+mv ../build/utils/donate-screen/hyprland-donate-screen usr/bin/
+mv ../build/utils/update-screen/hyprland-update-screen usr/bin/
 
 mkdir DEBIAN
+
+# il manque des dependance !
 
 echo "Source: ${project}
 Section: graphics
@@ -31,8 +35,8 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}
 Architecture: amd64
-Depends: hyprutils
-Description: Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem." >> DEBIAN/control
+Depends: hyprland-qt-support
+Description: some qt/qml utilities that might be used by various hypr* apps." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ${project}

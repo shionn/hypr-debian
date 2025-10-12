@@ -11,7 +11,7 @@ git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${pr
 cd ${project} 
 
 make all
-#make install
+make install
 
 mkdir ${project}-${version}
 cd ${project}-${version}
