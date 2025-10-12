@@ -4,6 +4,7 @@ project="hyprutils"
 
 apt install libpixman-1-dev -y
 
+cd build
 rm -Rf $project*	
 
 git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}

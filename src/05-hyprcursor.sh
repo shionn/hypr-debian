@@ -4,6 +4,7 @@ project="hyprcursor"
 
 apt install libcairo2-dev libzip-dev librsvg2-dev libtomlplusplus-dev -y
 
+cd build
 rm -Rf $project*	
 
 git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}

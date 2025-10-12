@@ -4,6 +4,7 @@ project="hyprgraphics"
 
 apt install libcairo2-dev libpixman-1-dev libmagic-dev libjpeg-dev libwebp-dev librsvg2-dev -y
 
+cd build
 rm -Rf $project*	
 
 git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}

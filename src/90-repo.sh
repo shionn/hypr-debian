@@ -10,7 +10,7 @@ Components: main
 Description: Repo pour hyprland
 SignWith: yes" > repo/conf/distributions
 
-reprepro -b repo/ includedeb forky *.deb
+reprepro -b repo/ includedeb forky build/*.deb
 #reprepro -b repo/ includedeb forky hyprwayland-scanner-0.4.5.deb
 #reprepro -b repo/ includedeb forky hyprutils-0.10.0.deb
 #reprepro -b repo/ includedeb forky aquamarine-0.9.5.deb  

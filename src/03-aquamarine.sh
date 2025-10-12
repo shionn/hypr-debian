@@ -4,6 +4,7 @@ project="aquamarine"
 
 apt install libgles2-mesa-dev libseat-dev libinput-dev wayland-protocols libwayland-dev libpixman-1-dev libdrm-dev libgbm-dev libdisplay-info-dev hwdata libpugixml-dev -y
 
+cd build
 rm -Rf $project*	
 
 git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}

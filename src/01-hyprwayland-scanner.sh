@@ -4,6 +4,7 @@ project="hyprwayland-scanner"
 
 apt install libpugixml-dev -y
 
+cd build
 rm -Rf $project*	
 
 git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${project}
