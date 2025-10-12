@@ -8,10 +8,21 @@ Il faut avoir activer les repos **forky (testing)** ou **sid(unstable)**.
 
 ~~~bash
 wget https://shionn.github.io/hypr-debian/pool/main/h/hypr-debian-keyring/hypr-debian-keyring_1.0.0_all.deb
-sudo apt install hypr-debian-keyring_1.0.0_all.deb
+sudo apt install ./hypr-debian-keyring_1.0.0_all.deb
 sudo apt update
 sudo apt install hyprland
 ~~~
+
+# Version courante
+
+- aquamarine : 0.9.5
+- hyprcursor : 0.1.13
+- hyprgraphics : 0.2.0
+- **hyprland : 0.51.1**
+- hyprlang : 0.6.4
+- hyprutils : 0.10.0
+- hyprwayland-scanner : 0.4.5
+
 
 # Historique récent
 
