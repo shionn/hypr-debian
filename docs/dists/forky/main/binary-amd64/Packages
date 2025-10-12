@@ -2,16 +2,16 @@ Package: aquamarine
 Source: aquamarine
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/hyprwm/aquamarine
-Version: 0.9.5-1
+Version: 0.9.5-2
 Architecture: amd64
-Depends: hyprwayland-scanner (>=0.4.0), hyprutils (>=0.8.0), libgles2, libgles1, libseat1 (>=0.8.0), libinput10 (>=1.26.0), wayland-protocols, libwayland-bin, libwayland-cursor0, libwayland-egl1, libdrm-amdgpu1, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libgbm1, libdisplay-info2, hwdata 
+Depends: hyprwayland-scanner (>=0.4.0), hyprutils (>=0.8.0), libgles2, libgles1, libseat1 (>=0.8.0), libinput10 (>=1.26.0), wayland-protocols, libwayland-bin, libwayland-cursor0, libwayland-egl1, libdrm-amdgpu1, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libgbm1, libdisplay-info2, hwdata, libgl1, libopengl0, libwayland-server0 
 Priority: optional
 Section: graphics
-Filename: pool/main/a/aquamarine/aquamarine_0.9.5-1_amd64.deb
-Size: 364172
-SHA256: 7a7e434228eb7dbdb607b730051498f68953c14ba7502e154aaf029515428340
-SHA1: d962cb562bb64c776d9265cde1972bd97f1b0517
-MD5sum: 8fca23e290cb833adf70ca3efabb58a1
+Filename: pool/main/a/aquamarine/aquamarine_0.9.5-2_amd64.deb
+Size: 363088
+SHA256: d35c998bf38bf98356572cf696d49da9c1a19053f7ce31b0ee28d074423fc79f
+SHA1: 57cf28dd4eada51f96879ecb93fa3bf5c7c60bdd
+MD5sum: d6d4d5266814dcb0003477a96084aae1
 Description: Aquamarine is a very light linux rendering backend library. It provides basic abstractions for an application to render on a Wayland session (in a window) or a native DRM session.
  It is agnostic of the rendering API (Vulkan/OpenGL) and designed to be lightweight, performant, and minimal.
  Aquamarine provides no bindings for other languages. It is C++-only.
