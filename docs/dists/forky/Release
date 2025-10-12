@@ -1,0 +1,19 @@
+Origin: todo.com
+Label: todo.com
+Codename: forky
+Date: Sun, 12 Oct 2025 07:33:03 UTC
+Architectures: amd64
+Components: main
+Description: Hyprland repository by shionn
+MD5Sum:
+ 15a6d4e09e6d00bebf97ca88daf387a0 5558 main/binary-amd64/Packages
+ b72f842327bde46cf4b840816fcda555 2227 main/binary-amd64/Packages.gz
+ 26139d7d44e07992b18e4ebd66e55521 112 main/binary-amd64/Release
+SHA1:
+ 2616f9f0f727e7dca02b2035ce529bffa18e2eff 5558 main/binary-amd64/Packages
+ 74b38104b75a8140ba3a9c3c5a63992f0c627dc6 2227 main/binary-amd64/Packages.gz
+ 1b74055f803db734be98a3cdba8ec9d9a3b220a2 112 main/binary-amd64/Release
+SHA256:
+ 9fe9d78a0feb9aa64b9bb040a3082e196b1911f076ea7dfb8d77be1d8108fb83 5558 main/binary-amd64/Packages
+ 23bb802fbfbf92149841445a979b503b569ce38e51a86c67883eac292d4e0e7d 2227 main/binary-amd64/Packages.gz
+ d5637b93e5e815d7e7e8b6c046a00e97b3ad2eb1d13df35bea852e40251b7ed4 112 main/binary-amd64/Release

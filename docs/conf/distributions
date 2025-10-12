@@ -1,0 +1,7 @@
+Origin: todo.com
+Label: todo.com
+Codename: forky
+Architectures: amd64
+Components: main
+Description: Hyprland repository by shionn
+SignWith: yes

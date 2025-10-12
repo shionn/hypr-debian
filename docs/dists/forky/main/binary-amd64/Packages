@@ -1,0 +1,129 @@
+Package: aquamarine
+Source: aquamarine
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/aquamarine
+Version: 0.9.5
+Architecture: amd64
+Depends: hyprwayland-scanner (>=0.4.0), hyprutils (>=0.8.0), libgles2, libseat1 (>=0.8.0), libinput10 (>=1.26.0), wayland-protocols, libwayland-bin, libwayland-cursor0, libwayland-egl1, libdrm-amdgpu1, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libgbm1, libdisplay-info2, hwdata 
+Priority: optional
+Section: graphics
+Filename: pool/main/a/aquamarine/aquamarine_0.9.5_amd64.deb
+Size: 364428
+SHA256: 4a8bd991c9c4c7fc183ba348693ff7ece6c778b92ba5aba76e697f9a190c024e
+SHA1: 0c6f7d3ffb69bd044cb695419ca814895f308466
+MD5sum: e2a1541e17487ac267ae09426c1344a0
+Description: Aquamarine is a very light linux rendering backend library. It provides basic abstractions for an application to render on a Wayland session (in a window) or a native DRM session.
+ It is agnostic of the rendering API (Vulkan/OpenGL) and designed to be lightweight, performant, and minimal.
+ Aquamarine provides no bindings for other languages. It is C++-only.
+
+Package: hypr-debian-keyring
+Version: 1.0.0
+Architecture: all
+Maintainer: Shionn <shionn@gmail.com>
+Priority: optional
+Section: misc
+Filename: pool/main/h/hypr-debian-keyring/hypr-debian-keyring_1.0.0_all.deb
+Size: 1288
+SHA256: bab5f72d9b8a7eb8485cc7d258a50df5454c3ad6693c47ef16cb35cf65845bb5
+SHA1: 7c7eb26aa698deda3fd3bf489906568dad2f75db
+MD5sum: 0f473ba4ec6e022cb811d5b0d5bd82f3
+Description: OpenPGP archive certificates of hypr-debian
+
+Package: hyprcursor
+Source: hyprcursor
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprcursor
+Version: 0.1.13
+Architecture: amd64
+Depends: hyprlang (>= 0.4.2), libcairo2, libzip5, librsvg2-2, libtomlplusplus3t64
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprcursor/hyprcursor_0.1.13_amd64.deb
+Size: 207860
+SHA256: 6fbc791762b685674e3671e0be9f02d71c110fc28264b79415fd63ea303abd5e
+SHA1: e64346236cefddc2e336dc332021474b49853ed0
+MD5sum: 9ef9a553a04fbc906a9b9a0a720602a8
+Description: The hyprland cursor format, library and utilities.
+
+Package: hyprgraphics
+Source: hyprgraphics
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprgraphics
+Version: 0.2.0
+Architecture: amd64
+Depends: hyprutils, libcairo2, libmagic-mgc, libmagic1t64, libjpeg62-turbo, libwebp7, librsvg2-2, libjpeg62-turbo
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprgraphics/hyprgraphics_0.2.0_amd64.deb
+Size: 77288
+SHA256: 55177b5745aac7bf932daed1ebe585e62e2dba0d7c836e80703a9159d72fefc8
+SHA1: 018892ecbe806e1d5d50b011aa0fc1292a88becf
+MD5sum: 683a44eb96df64acb2a49c4d713626f5
+Description: Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem.
+
+Package: hyprland
+Source: hyprland
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprland
+Version: 0.51.1
+Architecture: amd64
+Depends: aquamarine (>=0.9.3), hyprlang (>=0.3.2), hyprcursor (>=0.1.7), hyprutils (>=0.8.2), hyprgraphics (>=0.1.3), hyprwayland-scanner (>=0.3.10), libxkbcommon0, libre2-11, libgbm1, pango1.0-tools, libxcursor1, libxcb-xfixes0, libxcb-icccm4, libxcb-composite0, libxcb-res0, libxcb-errors0
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprland/hyprland_0.51.1_amd64.deb
+Size: 49399012
+SHA256: 51a228321efde64d8fe54123f61d2961bd78515466cf7b8020b91c42a5cb10e8
+SHA1: a2741499e6e04e2e8e396cee239dfb4ba7c1ec66
+MD5sum: 5720fbce2178bb74b2cbc056acf34206
+Description: Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
+ It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other compositors and more...
+
+Package: hyprlang
+Source: hyprlang
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprlang
+Version: 0.6.4
+Architecture: amd64
+Depends: hyprutils (>=0.7.1)
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprlang/hyprlang_0.6.4_amd64.deb
+Size: 96660
+SHA256: 69fc0c9faa9396969c0a1ff1b4c0ced1e83b8d7b29c979b2bf17175166bacbe5
+SHA1: e6ec0872a81e9df84a4c6f39da2deabeb34759ea
+MD5sum: 4b4b7426a941e53759a0091cc818c6c8
+Description: The hypr configuration language is an extremely efficient, yet easy to work with, configuration language for linux applications.
+ It's user-friendly, easy to grasp, and easy to implement.
+
+Package: hyprutils
+Source: hyprutils
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprutils
+Version: 0.10.0
+Architecture: amd64
+Depends: libpixman-1-0
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprutils/hyprutils_0.10.0_amd64.deb
+Size: 97736
+SHA256: 5971f9e5403237c1ef0ab91189e232d670dde609e7421e5277bbf17be080a420
+SHA1: 743f7a6a7a817670c3b7007ff2ba24b90fabd7db
+MD5sum: 015d0dd0a355479298d95502e03168cd
+Description: Hyprutils is a small C++ library for utilities used across the Hypr* ecosystem.
+
+Package: hyprwayland-scanner
+Source: hyprwayland-scanner
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprwayland-scanner
+Version: 0.4.5
+Architecture: amd64
+Depends: libpugixml1v5
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprwayland-scanner/hyprwayland-scanner_0.4.5_amd64.deb
+Size: 84740
+SHA256: 650fc1477f8672fc4109512c6f71eb3109f886e554e47fe0f44fedc32f584367
+SHA1: abd9c457596f5d0856685501ab2c9c46e3282e09
+MD5sum: bf3260e49a52853a69ab3b45bd8545b4
+Description: A Hyprland implementation of wayland-scanner, in and for C++.
+
