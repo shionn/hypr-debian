@@ -2,12 +2,18 @@
 # Repo hyprland pour debian
 
 Attention je ne suis pas un spécialiste de la construction de paquets, tout n'est pas fait dans les règles de l'art. 
+Il faut avoir activer les repos **forky (testing)** ou **sid(unstable)**. 
 
 # Installation 
 
 ~~~bash
 
+
 ~~~
+
+# Historique récent
+
+- 12/10/2025 : Construction initial du repo
 
 # Construction 
 
