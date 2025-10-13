@@ -13,10 +13,8 @@ sudo apt update
 sudo apt install hyprland
 ~~~
 
-Si vous n'installer aucun autre bureau vous aurez probablement besoin également de : 
-~~~bash
-sudo apt install xwayland kitty xserver-xorg-video-all
-~~~
+Le but de ce repo n'est pas de vous fournir un guide d'installation des dépendance ni de configuration de hyprland. 
+Je propose simplement des paquet avec une mise à jour plus récente. 
 
 
 # Version courante
