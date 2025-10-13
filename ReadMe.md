@@ -13,6 +13,12 @@ sudo apt update
 sudo apt install hyprland
 ~~~
 
+Si vous n'installer aucun autre bureau vous aurez probablement besoin également de : 
+~~~bash
+sudo apt install xwayland kitty xserver-xorg-video-all
+~~~
+
+
 # Version courante
 
 - aquamarine : 0.9.5
