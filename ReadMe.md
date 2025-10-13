@@ -2,7 +2,7 @@
 # Repo hyprland pour debian
 
 Attention je ne suis pas un spécialiste de la construction de paquets, tout n'est pas fait dans les règles de l'art. 
-Il faut avoir activer les repos **forky (testing)** ou **sid(unstable)**. 
+Il faut avoir activer les repos **Debian 13 forky (testing)** ou **Debian sid (unstable)**. 
 
 # Installation 
 
