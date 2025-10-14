@@ -3,7 +3,7 @@ version="0.1.3"
 project="hyprpolkitagent"
 revision="0"
 
-apt install libpolkit-agent-1-dev libpolkit-qt6-1-dev qt6-tools-dev qt6-tools-dev-tools  qt6-base-dev qt6-declarative-dev qml6-module-qtquick qt6-charts-dev -y
+apt install libpolkit-agent-1-dev libpolkit-qt6-1-dev qt6-tools-dev qt6-tools-dev-tools  qt6-base-dev qt6-declarative-dev qml6-module-qtquick-controls qml6-module-qtquick-layouts -y
 
 cd build
 rm -Rf $project*	
@@ -34,7 +34,7 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}-${revision}
 Architecture: amd64
-Depends: hyprutils, libpolkit-agent-1-0, libpolkit-qt6-1-1
+Depends: hyprutils, hyprland-qt-support, libpolkit-agent-1-0, libpolkit-qt6-1-1, qt6-wayland, qml6-module-qtquick-controls, qml6-module-qtquick-layouts 
 Description: A simple polkit authentication agent for Hyprland, written in QT/QML." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
