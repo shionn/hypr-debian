@@ -55,7 +55,18 @@ a faire en priorité :
 - xdg-desktop-portal-hyprland : une histoire de dbus
 - hyprpolkitagent : elevation de privilege
 - hyprqt6engine : qt6 encore
-- hyprshot ? 
+- hyprshot ?
+
+Revoir l'ordre de construction : 
+- hyprland-protocols
+- hyprwayland-scanner
+- hyprutils
+- hyprgraphics
+- hyprlang
+- hyprcursor
+- aquamarine
+- xdg-desktop-portal-hyprland
+- hyprland
 
 # Lien
 
