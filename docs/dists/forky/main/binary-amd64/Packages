@@ -127,6 +127,22 @@ MD5sum: 4b4b7426a941e53759a0091cc818c6c8
 Description: The hypr configuration language is an extremely efficient, yet easy to work with, configuration language for linux applications.
  It's user-friendly, easy to grasp, and easy to implement.
 
+Package: hyprpolkitagent
+Source: hyprpolkitagent
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprpolkitagent
+Version: 0.1.3-1
+Architecture: amd64
+Depends: hyprutils, hyprland-qt-support, libpolkit-agent-1-0, libpolkit-qt6-1-1, qt6-wayland, qml6-module-qtquick-controls, qml6-module-qtquick-layouts 
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprpolkitagent/hyprpolkitagent_0.1.3-1_amd64.deb
+Size: 75016
+SHA256: 61a1e52ac7501bd31412cfc355cc4dc49560185bc1f30694895a162fbbfb3a00
+SHA1: 2cd4f8dc0c692de55e0488e78a9b2d632205e1da
+MD5sum: 0af7dd1963f2c8e211f672bc88c0815e
+Description: A simple polkit authentication agent for Hyprland, written in QT/QML.
+
 Package: hyprutils
 Source: hyprutils
 Maintainer: Shionn<shionn@gmail.com>

@@ -1,7 +1,7 @@
 #!/bin/bash
 version="0.1.3"
 project="hyprpolkitagent"
-revision="0"
+revision="1"
 
 apt install libpolkit-agent-1-dev libpolkit-qt6-1-dev qt6-tools-dev qt6-tools-dev-tools  qt6-base-dev qt6-declarative-dev qml6-module-qtquick-controls qml6-module-qtquick-layouts -y
 
