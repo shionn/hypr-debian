@@ -57,7 +57,8 @@ a faire en priorité :
 - xdg-desktop-portal-hyprland : une histoire de dbus
 - hyprqt6engine : qt6 encore
 - hyprshot ?
-
+- hyperlauncher
+- hypr (X11 vrsion)
 
 # Lien
 
