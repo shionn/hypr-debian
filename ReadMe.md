@@ -60,6 +60,13 @@ a faire en priorité :
 - hyperlauncher
 - hypr (X11 vrsion)
 
+non prioritaire :
+- hyprtoolkit
+- hyprpwcenter : pipewire gui
+- hyprsunset
+- hyprland-plugins
+- hyprwire
+
 # Lien
 
 - [Le repo officiel de Hyperland](https://github.com/hyprwm)
