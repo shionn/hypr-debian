@@ -48,13 +48,14 @@ Pour reconstruire votre repo executer les scripts present dans src dans l'ordre 
 
 Pour avoir le fingerprint : `gpg --list-secret-key` et recuperer le truc dans pub.
 
-# TOdo
+# Todo
 
 a faire en priorité : 
 - hyprpaper : wallpaper
 - xdg-desktop-portal-hyprland : une histoire de dbus
 - hyprpolkitagent : elevation de privilege
 - hyprqt6engine : qt6 encore
+- hyprshot ? 
 
 # Lien
 
