@@ -26,12 +26,14 @@ Je propose simplement des paquet avec une mise à jour plus récente.
 - hyprland-qt-support : 0.1.0
 - hyprland-qtutils : 0.1.5
 - hyprlang : 0.6.4
+- Hyprpolkitagent : 0.1.3
 - hyprutils : 0.10.0
 - hyprwayland-scanner : 0.4.5
 
 
 # Historique récent
 
+- 14/10/2025 : Hyprpolkitagent
 - 12/10/2025 : Construction initial du repo
 
 # Construction 
@@ -53,11 +55,8 @@ Pour avoir le fingerprint : `gpg --list-secret-key` et recuperer le truc dans pu
 a faire en priorité : 
 - hyprpaper : wallpaper
 - xdg-desktop-portal-hyprland : une histoire de dbus
-- hyprpolkitagent : elevation de privilege
 - hyprqt6engine : qt6 encore
 - hyprshot ?
-- xdg-desktop-portal-hyprland ?
-
 
 
 # Lien
