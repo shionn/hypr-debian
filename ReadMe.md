@@ -56,17 +56,9 @@ a faire en priorité :
 - hyprpolkitagent : elevation de privilege
 - hyprqt6engine : qt6 encore
 - hyprshot ?
+- xdg-desktop-portal-hyprland ?
 
-Revoir l'ordre de construction : 
-- hyprland-protocols
-- hyprwayland-scanner
-- hyprutils
-- hyprgraphics
-- hyprlang
-- hyprcursor
-- aquamarine
-- xdg-desktop-portal-hyprland
-- hyprland
+
 
 # Lien
 
