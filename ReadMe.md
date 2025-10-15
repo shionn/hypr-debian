@@ -67,6 +67,8 @@ non prioritaire :
 - hyprland-plugins
 - hyprwire
 
+A voir égtalement : https://github.com/hyprland-community/awesome-hyprland
+
 # Hypr (version X11)
 
 Tester sur Trixie et sur WSL2 !
