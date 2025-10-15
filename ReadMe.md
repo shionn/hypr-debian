@@ -85,6 +85,7 @@ sudo cp build/Hypr /usr/bin/Hypr
 # Lien
 
 - [Le repo officiel de Hyperland](https://github.com/hyprwm)
+- [Documentation HyprLand](https://wiki.hypr.land/)
 - [Mon Blog](https://shionn.github.io)
 
 
