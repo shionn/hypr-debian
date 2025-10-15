@@ -2,7 +2,7 @@
 # Repo hyprland pour debian
 
 Attention je ne suis pas un spécialiste de la construction de paquets, tout n'est pas fait dans les règles de l'art. 
-Il faut avoir activer les repos **Debian 13 forky (testing)** ou **Debian sid (unstable)**. 
+Il faut avoir activer les repos **Debian 14 forky (testing)** ou **Debian sid (unstable)**. Non compatible avec **Debian 13 Trixie (main)**
 
 # Installation 
 
@@ -26,7 +26,7 @@ Je propose simplement des paquet avec une mise à jour plus récente.
 - hyprland-qt-support : 0.1.0
 - hyprland-qtutils : 0.1.5
 - hyprlang : 0.6.4
-- Hyprpolkitagent : 0.1.3
+- hyprpolkitagent : 0.1.3
 - hyprutils : 0.10.0
 - hyprwayland-scanner : 0.4.5
 
