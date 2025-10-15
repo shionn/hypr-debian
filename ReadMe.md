@@ -67,6 +67,19 @@ non prioritaire :
 - hyprland-plugins
 - hyprwire
 
+# Hypr (version X11)
+
+Tester sur Trixie et sur WSL2 !
+
+~~~bash
+sudo apt install cmake gcc ninja-build build-essential libxcb-util1libxcb-xinerama0
+sudo apt install libxcb1-dev libgtk-3-dev libgtkmm-3.0-dev libxcb-randr0 libxcb-randr0-dev libxcb-util-dev libxcb-util0-dev libxcb-ewmh-dev libxcb-xinerama0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-cursor-dev libxcb-shape0-dev
+git clone -b 1.1.4 https://github.com/vaxerski/Hypr
+cd Hypr
+make clear && make release
+sudo cp build/Hypr /usr/bin/Hypr
+~~~
+
 # Lien
 
 - [Le repo officiel de Hyperland](https://github.com/hyprwm)
