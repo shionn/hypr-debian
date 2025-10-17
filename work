@@ -1,0 +1,27 @@
+
+CMAKE			BUILD			Depends			Projet
+cairo			libcairo2-dev		libcairo2		hyprlock
+egl
+gbm
+libdrm			libgles2-mesa-dev	libdrm2 ? 		hyprlock
+pixman-1		libpixman-1-dev		libpixman-1-0		hyprutils
+pugixml			libpugixml-dev		libpugixml1v5		hyprwayland-scannner
+sdbus-c++
+wayland-client
+wayland-protocols
+wayland-egl
+xkbcommon		libxkbcommon-dev	libxkbcommon0		hyprlock
+
+					
+libgles2-mesa-dev
+libdrm-dev
+libwayland-dev
+libpango1.0-dev
+wayland-protocols >= 1.35
+sdbus-c++>=2.0.0
+
+
+hyprutils>=0.8.0
+hyprlang>=0.6.0
+hyprlang>=0.6.0
+hyprwayland-scanner 0.4.4
