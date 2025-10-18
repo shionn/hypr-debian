@@ -13,9 +13,20 @@ sudo apt update
 sudo apt install hyprland
 ~~~
 
-Le but de ce repo n'est pas de vous fournir un guide d'installation des dépendance ni de configuration de hyprland. 
-Je propose simplement des paquet avec une mise à jour plus récente. 
+Le but de ce repo n'est pas de vous fournir un guide d'installation des dépendances ni de configuration de hyprland. 
+Je propose simplement des paquets avec une mise à jour plus récente. 
 
+Si vous êtes sur debian **Debian sid (unstable)** il vous faudrat peu être rendre de depot plus prioritaire que celui d'unstable. Ajouter un apt pinning dans `/etc/apt/preferences.d/hyprland` : 
+
+~~~bash
+Package: hypr*
+Pin: origin shionn.github.io
+Pin-Priority: 900
+
+Package: hypr*
+Pin: release o=debian
+Pin-Priority: -1
+~~~
 
 # Version courante
 
@@ -26,6 +37,7 @@ Je propose simplement des paquet avec une mise à jour plus récente.
 - hyprland-qt-support : 0.1.0
 - hyprland-qtutils : 0.1.5
 - hyprlang : 0.6.4
+- hyprlock : 0.9.2
 - hyprpolkitagent : 0.1.3
 - hyprutils : 0.10.0
 - hyprwayland-scanner : 0.4.5
@@ -33,6 +45,7 @@ Je propose simplement des paquet avec une mise à jour plus récente.
 
 # Historique récent
 
+- 18/10/2025 : ajout hyprlock
 - 14/10/2025 : Hyprpolkitagent
 - 12/10/2025 : Construction initial du repo
 
