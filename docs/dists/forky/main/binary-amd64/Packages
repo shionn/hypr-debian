@@ -131,16 +131,16 @@ Package: hyprlock
 Source: hyprlock
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/hyprwm/hyprlock
-Version: 0.9.2-pre2
+Version: 0.9.2-pre6
 Architecture: amd64
-Depends: hyprgraphics (>=0.1.6), hyprlang (>=0.6.0), hyprutils (>=0.8.0), hyprwayland-scanner (>=0.4.4), libcairo2, libgles1, libgles2, libegl1, libgbm1, libdrm2, libpangocairo-1.0.0, libwayland-client0, wayland-protocols (>=1.35), libwayland-egl1, libxkbcommon0, libsdbus-c++-bin (>=2.0.0), libpam0g, libpugixml1v5, libjpeg62-turbo, libwebp7, librsvg2-bin
+Depends: hyprgraphics (>=0.1.6), hyprlang (>=0.6.0), hyprutils (>=0.8.0), hyprwayland-scanner (>=0.4.4), libcairo2, libgles1, libgles2, libegl1, libgbm1, libdrm2, libpangocairo-1.0-0, libwayland-client0, wayland-protocols (>=1.35), libwayland-egl1, libxkbcommon0, libsdbus-c++2 (>=2.0.0), libpam0g, libpugixml1v5, libjpeg62-turbo, libwebp7, librsvg2-bin
 Priority: optional
 Section: graphics
-Filename: pool/main/h/hyprlock/hyprlock_0.9.2-pre2_amd64.deb
-Size: 364340
-SHA256: abcf024dd080602b956f4429ab72bfe0f8f08d7b5018aa8cbb916c5e98d59b76
-SHA1: 6ea5847a237e37c96cf6e7281959f75e13c82753
-MD5sum: 0da8bb5ea99aab7ca3a29de7694e0e28
+Filename: pool/main/h/hyprlock/hyprlock_0.9.2-pre6_amd64.deb
+Size: 364748
+SHA256: 46ccd4906c24ed12fc68a215f9db28ed47edb5f66f8766a681cd154ed30822ad
+SHA1: d90cc7d6920509684814f62865ebb4d3b23c5110
+MD5sum: 19dc16aabe5a9101a7e9d2cce4edd2ba
 Description: Hyprland's simple, yet multi-threaded and GPU-accelerated screen locking utility.
 
 Package: hyprpolkitagent
