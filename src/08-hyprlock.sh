@@ -1,7 +1,7 @@
 #!/bin/bash
 version="0.9.2"
 project="hyprlock"
-revision="pre6"
+revision="0"
 
 apt install libcairo2-dev \
 	libegl-dev \
