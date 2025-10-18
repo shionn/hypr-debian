@@ -14,6 +14,8 @@ cd ${project}
 make all
 make install
 
+# TODO split pour les wallpapers
+
 mkdir ${project}-${version}-${revision}
 cd ${project}-${version}-${revision}
 
@@ -41,7 +43,6 @@ cp ../docs/hyprctl.1                usr/local/share/man/man1/
 cp ../example/hyprland.desktop      usr/local/share/wayland-sessions/
 cp ../systemd/hyprland-uwsm.desktop usr/local/share/wayland-sessions/
 cp ../assets/hyprland-portals.conf  usr/local/share/xdg-desktop-portal/
-
 
 
 mkdir DEBIAN
