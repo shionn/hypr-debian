@@ -69,6 +69,8 @@ non prioritaire :
 
 A voir égtalement : https://github.com/hyprland-community/awesome-hyprland
 
+faire un check des dependance avec **ldd**.
+
 # Hypr (version X11)
 
 Tester sur Trixie et sur WSL2 !
