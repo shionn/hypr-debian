@@ -1,7 +1,7 @@
 #!/bin/bash
 version="0.9.2"
 project="hyprlock"
-revision="pre1"
+revision="pre2"
 
 apt install libcairo2-dev \
 	libegl-dev \
@@ -48,7 +48,7 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}-${revision}
 Architecture: amd64
-Depends: hyprgraphics (>=0.1.6), hyprlang (>=0.6.0), hyprutils (>=0.8.0), hyprwayland-scanner (>=0.4.4), libcairo2, libgles1, libgles2, libegl1, libgbm1, libdrm2, libpangocairo-1.0.0, libwayland-client0, wayland-protocol (>=1.35), libwayland-egl1, libxkbcommon0, libsdbus-c++-bin (>=2.0.0), libpam0g, libpugixml1v5, libjpeg62-turbo, libwebp7, librsvg2-bin
+Depends: hyprgraphics (>=0.1.6), hyprlang (>=0.6.0), hyprutils (>=0.8.0), hyprwayland-scanner (>=0.4.4), libcairo2, libgles1, libgles2, libegl1, libgbm1, libdrm2, libpangocairo-1.0.0, libwayland-client0, wayland-protocols (>=1.35), libwayland-egl1, libxkbcommon0, libsdbus-c++-bin (>=2.0.0), libpam0g, libpugixml1v5, libjpeg62-turbo, libwebp7, librsvg2-bin
 Description: Hyprland's simple, yet multi-threaded and GPU-accelerated screen locking utility.">> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
