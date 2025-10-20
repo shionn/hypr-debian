@@ -4,35 +4,35 @@ Hash: SHA512
 Origin: shionn.github.io/hypr-debian
 Label: shionn.github.io/hypr-debian
 Codename: forky
-Date: Sun, 19 Oct 2025 08:45:42 UTC
+Date: Mon, 20 Oct 2025 21:10:43 UTC
 Architectures: amd64 i386
 Components: main
 Description: Hyprland repository by shionn
 MD5Sum:
- 7b5116297a1aeedfb8f6f2b776b8902d 8868 main/binary-amd64/Packages
- 3b17c6d36ece8898fa05bffb02c85713 3204 main/binary-amd64/Packages.gz
+ ed75ff95b00a5583907fab9e40813a93 9415 main/binary-amd64/Packages
+ 2fa3f1b6d389e6846ae4d68bc7ac957e 3361 main/binary-amd64/Packages.gz
  19663cc7ebcf0225705cdbc69c6bda5a 152 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
  faac9f56db77e417679fbc43179a435c 151 main/binary-i386/Release
 SHA1:
- dfc6bbe464a66b11438cdd415a98f2d567c4fa62 8868 main/binary-amd64/Packages
- 605d9d0a7a85f69908dd5190c47f716984aa838c 3204 main/binary-amd64/Packages.gz
+ 96a6bdacaee71f656c78b7bbe3b7a0bcdbf20589 9415 main/binary-amd64/Packages
+ 53a233a010ffeed46457a97ecfeeef521b0fd791 3361 main/binary-amd64/Packages.gz
  a9c62fc91545b2bf111eecf534430bad4a2c9ffc 152 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
  f5bd68a1b1f4def144242b7c138a51511fb0e476 151 main/binary-i386/Release
 SHA256:
- 43fdfa9e9c442eb902a6d5190bbf6d45e6e49a1083e609cdf6d008c6785b0715 8868 main/binary-amd64/Packages
- c9e5f4eabba850de2d2e181078be2305da267b9d865bcfae6a3de0d77904cd36 3204 main/binary-amd64/Packages.gz
+ 376bf32f33ebf0cd2a27a350b6ecee8791ee2b2a838913fa1abfed48a184ee5c 9415 main/binary-amd64/Packages
+ 76609f970342a2837e4b1a41d35bb723533013addc23e88fad8bedfe90ca68f8 3361 main/binary-amd64/Packages.gz
  62c647249841fc2dbf8a6f829894d9daf795435eed7af3f8b1b640da6f8b2ac4 152 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
  e03010179fcea8f0e97e33c2a7b10a6ed512c1fd7c52fb8e9d0b5f8d73867e2e 151 main/binary-i386/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQSZ0M2umS9w8YDyLqrmZUBlTWoLWQUCaPSlNgAKCRDmZUBlTWoL
-WTO1AP4r93MtyOhO5u+SyIl0q+LyC3lJSLseEJ6BfTtNKM2ThgEAhHtwQw5WrMZk
-DOG965sIq4nNhpjhs1OPXZ0EZmpVNQw=
-=kgpH
+iHUEARYKAB0WIQSZ0M2umS9w8YDyLqrmZUBlTWoLWQUCaPalUwAKCRDmZUBlTWoL
+WdoyAQCyTGMoTuH+VxfOPGH+F2FpPEaPbs5Mg55u5oiUvRvSugD/bcCO3xicFatG
+7UKRX0FatiNk5qFTiqvSYpDdscxpCA0=
+=WqlT
 -----END PGP SIGNATURE-----

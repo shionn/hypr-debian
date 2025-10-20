@@ -78,6 +78,22 @@ MD5sum: 4ab45d565db484b944ee06bc0b82c50a
 Description: Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
  It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other compositors and more...
 
+Package: hyprland-protocols
+Source: hyprland-protocols
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprland-protocols
+Version: 0.7.0-0~pre1
+Architecture: amd64
+Depends: 
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprland-protocols/hyprland-protocols_0.7.0-0~pre1_amd64.deb
+Size: 8976
+SHA256: ff0201ac32957023ea00a3296ad35874cb8ed00aa8bde7b6fea55c96f91e8d3d
+SHA1: 8dc572b0c2434234120c9ae69bf89e2912a306f5
+MD5sum: 5d51da3dacc4e286847591016f214893
+Description: Wayland protocol extensions for Hyprland.
+
 Package: hyprland-qt-support
 Source: hyprland-qt-support
 Maintainer: Shionn<shionn@gmail.com>
