@@ -61,6 +61,22 @@ SHA1: 018892ecbe806e1d5d50b011aa0fc1292a88becf
 MD5sum: 683a44eb96df64acb2a49c4d713626f5
 Description: Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem.
 
+Package: hypridle
+Source: hypridle
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hypridle
+Version: 0.1.7-0~pre1
+Architecture: amd64
+Depends: hyprlang (>=0.6.0), hyprutils (>=0.2.0), hyprwayland-scanner (>=0.4.4), hyprland-protocols (>=0.6.0), libsdbus-c++2 (>= 0.2.0), libwayland-client0, wayland-protocols, libpugixml1v5
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hypridle/hypridle_0.1.7-0~pre1_amd64.deb
+Size: 124032
+SHA256: 80fe81313fd71f2f66f69e204c849c5468683930a8763e704a86b8672e2c7335
+SHA1: b188712955155f7e52cda2676ce2062130ec54af
+MD5sum: 932bee2934c03f9265e06ee58dac284f
+Description: Hyprland's idle daemon.
+
 Package: hyprland
 Source: hyprland
 Maintainer: Shionn<shionn@gmail.com>
