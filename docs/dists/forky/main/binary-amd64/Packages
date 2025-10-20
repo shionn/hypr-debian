@@ -61,22 +61,54 @@ SHA1: 018892ecbe806e1d5d50b011aa0fc1292a88becf
 MD5sum: 683a44eb96df64acb2a49c4d713626f5
 Description: Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem.
 
+Package: hypridle
+Source: hypridle
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hypridle
+Version: 0.1.7-0~pre1
+Architecture: amd64
+Depends: hyprlang (>=0.6.0), hyprutils (>=0.2.0), hyprwayland-scanner (>=0.4.4), hyprland-protocols (>=0.6.0), libsdbus-c++2 (>= 0.2.0), libwayland-client0, wayland-protocols, libpugixml1v5
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hypridle/hypridle_0.1.7-0~pre1_amd64.deb
+Size: 124032
+SHA256: 80fe81313fd71f2f66f69e204c849c5468683930a8763e704a86b8672e2c7335
+SHA1: b188712955155f7e52cda2676ce2062130ec54af
+MD5sum: 932bee2934c03f9265e06ee58dac284f
+Description: Hyprland's idle daemon.
+
 Package: hyprland
 Source: hyprland
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/hyprwm/hyprland
-Version: 0.51.1-1
+Version: 0.51.1-2
 Architecture: amd64
-Depends: aquamarine (>=0.9.3), hyprlang (>=0.3.2), hyprcursor (>=0.1.7), hyprutils (>=0.8.2), hyprgraphics (>=0.1.3), hyprwayland-scanner (>=0.3.10), libxkbcommon0, libre2-11, libgbm1, pango1.0-tools, libxcursor1, libxcb-xfixes0, libxcb-icccm4, libxcb-composite0, libxcb-res0, libxcb-errors0, libwayland-bin
+Depends: aquamarine (>=0.9.3), hyprlang (>=0.3.2), hyprcursor (>=0.1.7), hyprutils (>=0.8.2), hyprgraphics (>=0.1.3), hyprwayland-scanner (>=0.3.10), libxkbcommon0, libre2-11, libgbm1, pango1.0-tools, libxcursor1, libxcb-xfixes0, libxcb-icccm4, libxcb-composite0, libxcb-res0, libxcb-errors0, libwayland-bin, hyprland-wallpaper
 Priority: optional
 Section: graphics
-Filename: pool/main/h/hyprland/hyprland_0.51.1-1_amd64.deb
-Size: 49401476
-SHA256: b412698963c57ed2f870edb485f3c7bb854331d5d26b479e75490b9ef936240b
-SHA1: ab99ba9e13b38b7e2274f37799ad591d04df11bb
-MD5sum: d475e299b414d80a90e9b0aa0fb75f9e
+Filename: pool/main/h/hyprland/hyprland_0.51.1-2_amd64.deb
+Size: 2994424
+SHA256: cf81a1cc454b12bb802a4580fbcec4ad5ce1d006489b5faef0fe50afb72aa24d
+SHA1: 82e955a3773d382e8154c8322b38beffa36e379c
+MD5sum: 4ab45d565db484b944ee06bc0b82c50a
 Description: Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
  It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other compositors and more...
+
+Package: hyprland-protocols
+Source: hyprland-protocols
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprland-protocols
+Version: 0.7.0-0~pre1
+Architecture: amd64
+Depends: 
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprland-protocols/hyprland-protocols_0.7.0-0~pre1_amd64.deb
+Size: 8976
+SHA256: ff0201ac32957023ea00a3296ad35874cb8ed00aa8bde7b6fea55c96f91e8d3d
+SHA1: 8dc572b0c2434234120c9ae69bf89e2912a306f5
+MD5sum: 5d51da3dacc4e286847591016f214893
+Description: Wayland protocol extensions for Hyprland.
 
 Package: hyprland-qt-support
 Source: hyprland-qt-support
@@ -109,6 +141,22 @@ SHA256: 2392ad5619ea959ea3825c1726cc55c9856a519e482c6e0c436356a7a03091a2
 SHA1: 9c7510a26b85356e34bf970ed779bd390eb06248
 MD5sum: 434ec370cc341bbe6846bc0f88b5aea5
 Description: some qt/qml utilities that might be used by various hypr* apps.
+
+Package: hyprland-wallpaper
+Source: hyprland-wallpaper
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/hyprwm/hyprland
+Version: 0.51.1-0
+Architecture: amd64
+Depends: 
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprland-wallpaper/hyprland-wallpaper_0.51.1-0_amd64.deb
+Size: 46396540
+SHA256: 0060437a3a3e01e7562bb8b0c1e25951b448f6dbde6ca6940615a15150d37f0a
+SHA1: 7a5846fbce800e9824200135d6a6becec3ae0a15
+MD5sum: d6aec01b66de25d894c38177e1c73fe3
+Description: Hyprland Wallpapers.
 
 Package: hyprlang
 Source: hyprlang

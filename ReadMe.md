@@ -33,7 +33,9 @@ Pin-Priority: -1
 - aquamarine : 0.9.5
 - hyprcursor : 0.1.13
 - hyprgraphics : 0.2.0
+- hypridle : 0.1.7
 - **hyprland : 0.51.1**
+- hyprland-protocols : 0.7.0
 - hyprland-qt-support : 0.1.0
 - hyprland-qtutils : 0.1.5
 - hyprlang : 0.6.4

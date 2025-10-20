@@ -1,6 +1,6 @@
 #!/bin/bash
 apt update
-apt install git cmake build-essential  -y
+apt install git cmake build-essential meson -y
 # poru resoudre les dependance CMAKE
 apt install pkg-config -y
 # pour verifier la construction du packe
