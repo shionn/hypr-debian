@@ -1,7 +1,7 @@
 #!/bin/bash
 version="0.1.7"
 project="hypridle"
-revision="0~pre1"
+revision="0"
 
 apt install libwayland-dev \
 	wayland-protocols \
@@ -38,6 +38,7 @@ Package: ${project}
 Version: ${version}-${revision}
 Architecture: amd64
 Depends: hyprlang (>=0.6.0), hyprutils (>=0.2.0), hyprwayland-scanner (>=0.4.4), hyprland-protocols (>=0.6.0), libsdbus-c++2 (>= 0.2.0), libwayland-client0, wayland-protocols, libpugixml1v5
+Recommends:  brightnessctl
 Description: Hyprland's idle daemon.">> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/

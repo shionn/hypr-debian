@@ -1,9 +1,9 @@
 #!/bin/bash
-version="0.1.13"
-project="hyprcursor"
-revision="0"
+version="0.1.1"
+project="hyprtoolkit"
+revision="0~pre0"
 
-apt install libcairo2-dev libzip-dev librsvg2-dev libtomlplusplus-dev -y
+#apt install libpixman-1-dev -y
 
 cd build
 rm -Rf $project*	
@@ -12,15 +12,16 @@ git clone --recursive -b v$version https://github.com/hyprwm/${project}.git ${pr
 cd ${project} 
 
 cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
-cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
+cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf NPROCESSORS_CONF`
+
+exit
+
 cmake --install build
 
 mkdir ${project}-${version}-${revision}
 cd ${project}-${version}-${revision}
 mkdir -p usr/lib/x86_64-linux-gnu/
-mv ../build/libhyprcursor.so* usr/lib/x86_64-linux-gnu/
-mkdir -p usr/bin/
-mv ../build/hyprcursor-util usr/bin/
+mv ../build/libhyprgraphics.so* usr/lib/x86_64-linux-gnu/
 
 mkdir DEBIAN
 
@@ -32,8 +33,8 @@ Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
 Version: ${version}-${revision}
 Architecture: amd64
-Depends: hyprlang (>= 0.4.2), libcairo2, libzip5, librsvg2-2, libtomlplusplus3t64
-Description: The hyprland cursor format, library and utilities." >> DEBIAN/control
+Depends: libc6 (>=2.40)
+Description: A fast and consistent wire protocol for IPC." >> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ${project}

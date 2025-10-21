@@ -65,16 +65,17 @@ Package: hypridle
 Source: hypridle
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/hyprwm/hypridle
-Version: 0.1.7-0~pre1
+Version: 0.1.7-0
 Architecture: amd64
 Depends: hyprlang (>=0.6.0), hyprutils (>=0.2.0), hyprwayland-scanner (>=0.4.4), hyprland-protocols (>=0.6.0), libsdbus-c++2 (>= 0.2.0), libwayland-client0, wayland-protocols, libpugixml1v5
+Recommends:  brightnessctl
 Priority: optional
 Section: graphics
-Filename: pool/main/h/hypridle/hypridle_0.1.7-0~pre1_amd64.deb
+Filename: pool/main/h/hypridle/hypridle_0.1.7-0_amd64.deb
 Size: 124032
-SHA256: 80fe81313fd71f2f66f69e204c849c5468683930a8763e704a86b8672e2c7335
-SHA1: b188712955155f7e52cda2676ce2062130ec54af
-MD5sum: 932bee2934c03f9265e06ee58dac284f
+SHA256: b3bc026503df871cd1a4a2f23faa6b3a09bb952d1902ac83fd5c408ed0543cef
+SHA1: 5be72e4a2b72dc7daf3819cd2c4f78ff80d2a495
+MD5sum: de98398294f6abe517049145128c9192
 Description: Hyprland's idle daemon.
 
 Package: hyprland
@@ -98,16 +99,16 @@ Package: hyprland-protocols
 Source: hyprland-protocols
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/hyprwm/hyprland-protocols
-Version: 0.7.0-0~pre1
+Version: 0.7.0-0
 Architecture: amd64
 Depends: 
 Priority: optional
 Section: graphics
-Filename: pool/main/h/hyprland-protocols/hyprland-protocols_0.7.0-0~pre1_amd64.deb
+Filename: pool/main/h/hyprland-protocols/hyprland-protocols_0.7.0-0_amd64.deb
 Size: 8976
-SHA256: ff0201ac32957023ea00a3296ad35874cb8ed00aa8bde7b6fea55c96f91e8d3d
-SHA1: 8dc572b0c2434234120c9ae69bf89e2912a306f5
-MD5sum: 5d51da3dacc4e286847591016f214893
+SHA256: d731dea6553c7e6083dc3ddce91641bd3e6a29ce6d9ec52344109357b798b33c
+SHA1: 316d4536340dd61b422399c119d53eb2bd1b90e5
+MD5sum: 4a1b0d33cd55e6f0edb5c9fe304a17d9
 Description: Wayland protocol extensions for Hyprland.
 
 Package: hyprland-qt-support

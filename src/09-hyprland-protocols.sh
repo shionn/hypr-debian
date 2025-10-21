@@ -1,7 +1,7 @@
 #!/bin/bash
 version="0.7.0"
 project="hyprland-protocols"
-revision="0~pre1"
+revision="0"
 
 cd build
 rm -Rf $project*	
