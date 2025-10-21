@@ -1,6 +1,7 @@
 #!/bin/bash
 version="0.2.0"
 project="hyprgraphics"
+revision="0"
 
 apt install libcairo2-dev libpixman-1-dev libmagic-dev libjpeg-dev libwebp-dev librsvg2-dev -y
 
@@ -14,8 +15,8 @@ cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PRE
 cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf NPROCESSORS_CONF`
 cmake --install build
 
-mkdir ${project}-${version}
-cd ${project}-${version}
+mkdir ${project}-${version}-${revision}
+cd ${project}-${version}-${revision}
 mkdir -p usr/lib/x86_64-linux-gnu/
 mv ../build/libhyprgraphics.so* usr/lib/x86_64-linux-gnu/
 
@@ -27,7 +28,7 @@ Priority: optional
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/hyprwm/${project}
 Package: ${project}
-Version: ${version}
+Version: ${version}-${revision}
 Architecture: amd64
 Depends: hyprutils, libcairo2, libmagic-mgc, libmagic1t64, libjpeg62-turbo, libwebp7, librsvg2-2, libjpeg62-turbo
 Description: Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem." >> DEBIAN/control
@@ -40,7 +41,7 @@ Copyright: 2024, Hypr Development
 Licence: BSD 3-Clause License" >> DEBIAN/copyright
 
 cd .. 
-dpkg -b ${project}-${version}
+dpkg -b ${project}-${version}-${revision}
 
-mv ${project}-${version}.deb ../
+mv ${project}-${version}-${revision}.deb ../
 
