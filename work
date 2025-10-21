@@ -7,6 +7,20 @@ OpenGL				libgles2-mesa-dev	?
 wayland-client		libwayland-dev		libwayland-bin		
 NON FINI
 
+=================== hypridle ===========================
+sdbus-c++			libsdbus-c++-dev	libsdbus-c++2		>= 0.2.0
+wayland-client		libwayland-dev		libwayland-client0
+wayland-protocols 	wayland-protocols	wayland-protocols	
+
+hyprlang													>= 0.6.0
+hyprland-protocols											>= 0.6.0
+hyprutils													>= 0.2.0
+hyprwayland-scanner											>= 0.4.4
+					libpugixml-dev		libpugixml1v5  	    # dependance transitive de hyprwayland-scanner
+					
+=================== hyprland-protocols =================
+none
+
 =================== hyprlock ===========================
 OpenGL				libgles2-mesa-dev	libgles1
 										libgles2
@@ -16,7 +30,7 @@ gbm					libgbm-dev			libgbm1
 libdrm				libdrm-dev			libdrm2
 pam					libpam0g-dev		libpam0g
 pangocairo			libpango1.0-dev		libpangocairo-1.0-0
-sdbus-c++ 			libsdbus-c++-dev	libsdbus-c++2	>= 2.0.0
+sdbus-c++ 			libsdbus-c++-dev	libsdbus-c++2		>= 2.0.0
 wayland-client		libwayland-dev		libwayland-client0
 wayland-protocols 	wayland-protocols	wayland-protocols	>= 1.35
 wayland-egl			libwayland-dev		libwayland-egl1
@@ -38,12 +52,14 @@ pixman-1			libpixman-1-dev		libpixman-1-0
 pugixml				libpugixml-dev		libpugixml1v5		
 					
 						
-
-
--- Install configuration: "Release"
--- Installing: /usr/local/bin/hyprlock					build
--- Installing: /usr/local/etc/pam.d/hyprlock			pam
--- Installing: /usr/local/share/hypr/hyprlock.conf		assets/example.conf
-
+Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-ctm-control-v1.xml to 		/usr/local/share/hyprland-protocols/protocols
+Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-focus-grab-v1.xml to 			/usr/local/share/hyprland-protocols/protocols
+Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-global-shortcuts-v1.xml to 	/usr/local/share/hyprland-protocols/protocols
+Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-input-capture-v1.xml to 		/usr/local/share/hyprland-protocols/protocols
+Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-lock-notify-v1.xml to 		/usr/local/share/hyprland-protocols/protocols
+Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-surface-v1.xml to 			/usr/local/share/hyprland-protocols/protocols
+Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-toplevel-export-v1.xml to 	/usr/local/share/hyprland-protocols/protocols
+Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-toplevel-mapping-v1.xml to 	/usr/local/share/hyprland-protocols/protocols
+Installing /root/hypr/build/hyprland-protocols/build/hyprland-protocols.pc to 					/usr/local/share/pkgconfig
 
 
