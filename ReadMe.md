@@ -47,8 +47,9 @@ Pin-Priority: -1
 
 # Historique récent
 
-- 18/10/2025 : ajout hyprlock
-- 14/10/2025 : Hyprpolkitagent
+- 21/10/2025 : Ajout de hypridle
+- 18/10/2025 : Ajout de hyprlock
+- 14/10/2025 : Ajout de hyprpolkitagent
 - 12/10/2025 : Construction initial du repo
 
 # Construction 
