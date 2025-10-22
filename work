@@ -15,7 +15,8 @@ pixman-1			libpixman-1-dev		libpixman-1-0
 wayland-client		libwayland-dev		libwayland-client0 # peut etre d'autyre dépendence sont necessaire
 wayland-protocols	wayland-protocols	wayland-protocols
 										libc6 				>= 2.40
-TODO									libstdc++6
+TODO  (ou pasd  à check)				libstdc++6
+									
 
 hyprutils													>= 0.8.0
 hyprwayland-scanner											>= 0.4.0
