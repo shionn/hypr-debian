@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: shionn.github.io/hypr-debian
 Label: shionn.github.io/hypr-debian
 Codename: experimental
-Date: Wed, 22 Oct 2025 16:10:45 UTC
+Date: Wed, 22 Oct 2025 16:25:52 UTC
 Architectures: amd64 i386
 Components: main
 Description: Hyprland repository by shionn
@@ -31,8 +31,8 @@ SHA256:
  e03010179fcea8f0e97e33c2a7b10a6ed512c1fd7c52fb8e9d0b5f8d73867e2e 151 main/binary-i386/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQSZ0M2umS9w8YDyLqrmZUBlTWoLWQUCaPkCBQAKCRDmZUBlTWoL
-WT5rAP4hcN2p9HAjojRiIqSN5+pruSBdPR+5ahpG/yGrwRVsvQD/WbEgkdVH8hvU
-KFQEyDpBAAW+WwY04kt+txhY3rDqVAk=
-=fpvJ
+iHUEARYKAB0WIQSZ0M2umS9w8YDyLqrmZUBlTWoLWQUCaPkFkAAKCRDmZUBlTWoL
+WR4nAP0e0hPIzmQ0AL/4QGbTX7nZQ1w9RrsLpBukhkxVwkLCugEA8oLgI53PNFrm
+LX0xDDYqUrex4H4own4M8DjkeVe21AU=
+=qDC1
 -----END PGP SIGNATURE-----

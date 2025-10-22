@@ -94,16 +94,17 @@ Package: hyprland
 Source: hyprland
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/hyprwm/hyprland
-Version: 0.51.1-2
+Version: 0.51.1-3
 Architecture: amd64
 Depends: aquamarine (>=0.9.3), hyprlang (>=0.3.2), hyprcursor (>=0.1.7), hyprutils (>=0.8.2), hyprgraphics (>=0.1.3), hyprwayland-scanner (>=0.3.10), libxkbcommon0, libre2-11, libgbm1, pango1.0-tools, libxcursor1, libxcb-xfixes0, libxcb-icccm4, libxcb-composite0, libxcb-res0, libxcb-errors0, libwayland-bin, hyprland-wallpaper
+Suggests: hypridle, hyprlock, kitty
 Priority: optional
 Section: graphics
-Filename: pool/main/h/hyprland/hyprland_0.51.1-2_amd64.deb
-Size: 2994424
-SHA256: cf81a1cc454b12bb802a4580fbcec4ad5ce1d006489b5faef0fe50afb72aa24d
-SHA1: 82e955a3773d382e8154c8322b38beffa36e379c
-MD5sum: 4ab45d565db484b944ee06bc0b82c50a
+Filename: pool/main/h/hyprland/hyprland_0.51.1-3_amd64.deb
+Size: 2996348
+SHA256: 416c0b2387a80d53d5d091bae5ed7bccb80bf4846c553f52030d4b8cc28b1c88
+SHA1: 24e37b4e9a41208b81ed379a8fc1cc617c9794a9
+MD5sum: 96e6743552012f9437603ed4ec173784
 Description: Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
  It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other compositors and more...
 
