@@ -4,6 +4,7 @@
 =================== aquamarine =========================
 OpenGL				libgles2-mesa-dev	libgles1
 										libgles2
+										libopengl0
 libdisplay-info		libdisplay-info-dev	libdisplay-info2
 libdrm				libdrm-dev			libdrm2
 libinput 			libinput-dev		libinput10			>= 1.26.0
@@ -14,7 +15,6 @@ gbm					libgbm-dev			libgbm1
 pixman-1			libpixman-1-dev		libpixman-1-0
 wayland-client		libwayland-dev		libwayland-client0 # peut etre d'autyre dépendence sont necessaire
 										libwayland-server0
-										libopengl0
 wayland-protocols	wayland-protocols	wayland-protocols
 										libc6 				>= 2.40
 TODO  (ou pasd  à check)				libstdc++6
@@ -22,7 +22,9 @@ TODO  (ou pasd  à check)				libstdc++6
 
 hyprutils													>= 0.8.0
 hyprwayland-scanner											>= 0.4.0
-					libpugixml-dev		libpugixml1v5  	    # dependance transitive de hyprwayland-scanner>> NON >> NON FINI <<
+					libpugixml-dev		libpugixml1v5  	    # dependance transitive de hyprwayland-scanner
+
+>> NON >> NON FINI <<
 										libwayland-bin
 										libwayland-cursor0
 										libwayland-egl1
