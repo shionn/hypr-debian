@@ -28,6 +28,9 @@ mv build/*.deb build/forky/
 reprepro -b docs/ includedeb forky build/forky/*.deb
 reprepro -b docs/ includedeb experimental build/experimental/*.deb
 
+reprepro -b docs/ export forky
+reprepro -b docs/ export experimental
+
 rm build/experimental/*.deb
 rm build/forky/*.deb
 

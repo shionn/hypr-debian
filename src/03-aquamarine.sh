@@ -1,7 +1,7 @@
 #!/bin/bash
 version="0.9.5"
 project="aquamarine"
-revision="5~pre1"
+revision="5"
 
 apt install libgles2-mesa-dev \
 	libdisplay-info-dev \
