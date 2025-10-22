@@ -1,7 +1,7 @@
 #!/bin/bash
 version="0.9.5"
 project="aquamarine"
-revision="5~pre0"
+revision="5~pre1"
 
 apt install libgles2-mesa-dev \
 	libdisplay-info-dev \
@@ -41,7 +41,7 @@ Package: ${project}
 Version: ${version}-${revision}
 Architecture: amd64
 Depends: hyprwayland-scanner (>=0.4.0), hyprutils (>=0.8.0), 
- libgles2, libgles1, 
+ libgles2, libgles1, libopengl0,
  libdisplay-info2, 
  libdrm2, 
  libinput10 (>=1.26.0), 
@@ -49,7 +49,7 @@ Depends: hyprwayland-scanner (>=0.4.0), hyprutils (>=0.8.0),
  hwdata, 
  libgbm1, 
  libpixman-1-0,
- libwayland-client0,
+ libwayland-client0, libwayland-server0,
  wayland-protocols, 
  libc6 (>=2.40),
  libpugixml1v5
