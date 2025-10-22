@@ -1,0 +1,5 @@
+Component: main
+Origin: shionn.github.io/hypr-debian
+Label: shionn.github.io/hypr-debian
+Architecture: i386
+Description: Hyprland repository by shionn

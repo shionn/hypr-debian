@@ -5,3 +5,12 @@ Architectures: amd64 i386
 Components: main
 Description: Hyprland repository by shionn
 SignWith: yes
+
+Origin: shionn.github.io/hypr-debian
+Label: shionn.github.io/hypr-debian
+Codename: experimental
+Architectures: amd64 i386
+Components: main
+Description: Hyprland repository by shionn
+SignWith: yes
+
