@@ -37,6 +37,9 @@ hyprutils													>= 0.2.0
 hyprwayland-scanner											>= 0.4.4
 					libpugixml-dev		libpugixml1v5  	    # dependance transitive de hyprwayland-scanner
 					
+=================== hyprland ===========================
+TODO									libstdc++6
+
 =================== hyprland-protocols =================
 none
 
