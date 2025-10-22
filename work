@@ -1,12 +1,33 @@
 
-=================== aquamarine =========================
-libdrm				libdrm-dev			libdrm2
-libinput 			libinput-dev		libinput-dev		>= 1.26.0
-libseat 			libseat-dev			libseat				>= 0.8.0
-OpenGL				libgles2-mesa-dev	?					
-wayland-client		libwayland-dev		libwayland-bin		
-NON FINI
 
+
+=================== aquamarine =========================
+OpenGL				libgles2-mesa-dev	libgles1
+										libgles2
+libdisplay-info		libdisplay-info-dev	libdisplay-info2
+libdrm				libdrm-dev			libdrm2
+libinput 			libinput-dev		libinput10			>= 1.26.0
+libseat 			libseat-dev			libseat				>= 0.8.0
+libudev				?					?
+hwdata				hwdata				hwdata	
+gbm					libgbm-dev			libgbm1
+pixman-1			libpixman-1-dev		libpixman-1-0
+wayland-client		libwayland-dev		libwayland-client0 # peut etre d'autyre dépendence sont necessaire
+wayland-protocols	wayland-protocols	wayland-protocols
+										libc6 				>= 2.40
+TODO  (ou pasd  à check)				libstdc++6
+									
+
+hyprutils													>= 0.8.0
+hyprwayland-scanner											>= 0.4.0
+					libpugixml-dev		libpugixml1v5  	    # dependance transitive de hyprwayland-scanner>> NON >> NON FINI <<
+										libwayland-bin
+										libwayland-cursor0
+										libwayland-egl1
+										libgl1
+										libopengl0
+										libwayland-server0
+										libegl1
 =================== hypridle ===========================
 sdbus-c++			libsdbus-c++-dev	libsdbus-c++2		>= 0.2.0
 wayland-client		libwayland-dev		libwayland-client0
@@ -18,8 +39,22 @@ hyprutils													>= 0.2.0
 hyprwayland-scanner											>= 0.4.4
 					libpugixml-dev		libpugixml1v5  	    # dependance transitive de hyprwayland-scanner
 					
+=================== hyprland ===========================
+
 =================== hyprland-protocols =================
 none
+
+=================== hyprlauncher =======================
+icu-uc
+libdrm
+libqalculate
+pixman-1			libpixman-1-dev		libpixman-1-0
+										libc6 				>= 2.40
+hyprutils
+hyprwire			TODO
+hyprlang
+hyprtoolkit			TODO
+>> NON FINI <<
 
 =================== hyprlock ===========================
 OpenGL				libgles2-mesa-dev	libgles1
@@ -44,22 +79,44 @@ hyprlang  													>= 0.6.0
 hyprutils 													>= 0.8.0
 hyprwayland-scanner											>= 0.4.4
 					libpugixml-dev		libpugixml1v5  	    # dependance transitive de hyprwayland-scanner
+
+=================== hyprtoolkit ========================
+OpenGL
+cairo
+egl
+gbm
+iniparser
+libdrm
+pango
+pangocairo
+pixman-1
+wayland-client
+wayland-protocols
+xkbcommon
+  										libc6 				>= 2.40
+aquamarine													>= 0.9.5
+hyprgraphics												>= 0.2.0
+hyprlang													>= 0.6.0
+hyprutils													>= 0.9.0
+hyprwayland-scanner											>= 0.4.0
+>> NON FINI <<
 					
 =================== hyprutils ==========================
 pixman-1			libpixman-1-dev		libpixman-1-0
 
 =================== hyprwayland-scannner ===============
 pugixml				libpugixml-dev		libpugixml1v5		
+
 					
+=================== hyprwire ===========================
+libffi				libffi-dev			libffi8
+  										libc6 				>= 2.40
+hyprutils													>= 0.9.0
+>> NON FINI <<
 						
-Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-ctm-control-v1.xml to 		/usr/local/share/hyprland-protocols/protocols
-Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-focus-grab-v1.xml to 			/usr/local/share/hyprland-protocols/protocols
-Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-global-shortcuts-v1.xml to 	/usr/local/share/hyprland-protocols/protocols
-Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-input-capture-v1.xml to 		/usr/local/share/hyprland-protocols/protocols
-Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-lock-notify-v1.xml to 		/usr/local/share/hyprland-protocols/protocols
-Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-surface-v1.xml to 			/usr/local/share/hyprland-protocols/protocols
-Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-toplevel-export-v1.xml to 	/usr/local/share/hyprland-protocols/protocols
-Installing /root/hypr/build/hyprland-protocols/protocols/hyprland-toplevel-mapping-v1.xml to 	/usr/local/share/hyprland-protocols/protocols
-Installing /root/hypr/build/hyprland-protocols/build/hyprland-protocols.pc to 					/usr/local/share/pkgconfig
-
-
+build
+-- Installing: /usr/bin/hypridle
+build/systemd
+-- Installing: /usr/lib/systemd/user/hypridle.service
+assets/example.conf
+-- Installing: /usr/share/hypr/hypridle.conf
