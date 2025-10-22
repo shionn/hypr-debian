@@ -14,6 +14,7 @@ gbm					libgbm-dev			libgbm1
 pixman-1			libpixman-1-dev		libpixman-1-0
 wayland-client		libwayland-dev		libwayland-client0 # peut etre d'autyre dépendence sont necessaire
 										libwayland-server0
+										libopengl0
 wayland-protocols	wayland-protocols	wayland-protocols
 										libc6 				>= 2.40
 TODO  (ou pasd  à check)				libstdc++6
@@ -26,7 +27,6 @@ hyprwayland-scanner											>= 0.4.0
 										libwayland-cursor0
 										libwayland-egl1
 										libgl1
-										libopengl0
 										libegl1
 =================== hypridle ===========================
 sdbus-c++			libsdbus-c++-dev	libsdbus-c++2		>= 0.2.0
