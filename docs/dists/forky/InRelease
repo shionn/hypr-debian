@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: shionn.github.io/hypr-debian
 Label: shionn.github.io/hypr-debian
 Codename: forky
-Date: Sun, 02 Nov 2025 15:52:15 UTC
+Date: Sun, 02 Nov 2025 16:03:48 UTC
 Architectures: amd64 i386
 Components: main
 Description: Hyprland repository by shionn
@@ -31,8 +31,8 @@ SHA256:
  e03010179fcea8f0e97e33c2a7b10a6ed512c1fd7c52fb8e9d0b5f8d73867e2e 151 main/binary-i386/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQSZ0M2umS9w8YDyLqrmZUBlTWoLWQUCaQd+LwAKCRDmZUBlTWoL
-WTO1AQC54GXQyODacS22/2kbWES8n1tJcxOXSJV0bgexd82ymwEAnmVj7jm8sChh
-tP+MCh7oN+7S8uj/+fh3VE3I8BIxfgU=
-=PSh1
+iHUEARYKAB0WIQSZ0M2umS9w8YDyLqrmZUBlTWoLWQUCaQeA5AAKCRDmZUBlTWoL
+WevmAQDTNUk+AazYK8EJrZmRcbaHutWMyUFtcHLJp0ee9nP86gEA+XkVXalstyf0
+sHNZDvAjLIkuXL18MzMJnE+jrOwpyAg=
+=dnWT
 -----END PGP SIGNATURE-----
