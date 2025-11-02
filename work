@@ -112,29 +112,20 @@ gbm					libgbm-dev			libgbm1
 libdrm				libdrm-dev			libdrm2
 libpipewire-0.3		libpipewire-0.3-dev	libpipewire-0.3-0t64	>=1.1.82
 libspa-0.2			libspa-0.2-dev		libspa-0.2-modules	?
+qt6-base-dev 
+qt6-declarative-dev
+sdbus-cpp			libsdbus-c++-dev	libsdbus-c++2
 wayland-client		libwayland-dev		libwayland-client0
 wayland-protocols 	wayland-protocols	wayland-protocols
-
+										libc6 				>= 2.40
 hyprlang													>=0.2.0
 hyprutils													>=0.2.6
 hyprwayland-scanner											>=0.4.2						
-						
+					libpugixml-dev		libpugixml1v5		# transitive
 >> commentaire <<
-libspa-0.2-modules : non déplaré, car je suis pas sur et puis c'est tiré via libpipewire.
-						
-gbm
-hyprland-protocols
-hyprlang
-hyprutils
-hyprwayland-scanner
-libdrm
-libpipewire-0.3
-libspa-0.2
-sdbus-cpp
-wayland-client
-wayland-protocols						
-						
->> NON FINI <<						
+libspa-0.2-modules : non déclaré, car je suis pas sur et puis c'est tiré via libpipewire.
+
+>> en test <<						
 						
 						
 						

@@ -68,6 +68,8 @@ Pour avoir le fingerprint : `gpg --list-secret-key` et recuperer le truc dans pu
 
 # Todo
 
+Ajouter les apt/preference au paquage de clef
+
 a faire en priorité : 
 - hyprpaper : wallpaper
 - xdg-desktop-portal-hyprland : une histoire de dbus
