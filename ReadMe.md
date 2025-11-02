@@ -41,12 +41,14 @@ Pin-Priority: -1
 - hyprlang : 0.6.4
 - hyprlock : 0.9.2
 - hyprpolkitagent : 0.1.3
+- hyprshot : 1.3.0
 - hyprutils : 0.10.0
 - hyprwayland-scanner : 0.4.5
 
 
 # Historique récent
 
+- 02/11/2025 : Ajout de hyprshot
 - 21/10/2025 : Ajout de hypridle
 - 18/10/2025 : Ajout de hyprlock
 - 14/10/2025 : Ajout de hyprpolkitagent
