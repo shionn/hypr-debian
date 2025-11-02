@@ -1,7 +1,7 @@
 #!/bin/bash
 version="1.3.0"
 project="hyprshot"
-revision="0~pre2"
+revision="0~pre3"
 
 cd build
 rm -Rf $project*	
@@ -24,7 +24,7 @@ Homepage: https://github.com/Gustash/Hyprshot
 Package: ${project}
 Version: ${version}-${revision}
 Architecture: amd64
-Depends: hyprland, slurp, grim, libnotify-bin, weston 
+Depends: hyprland, slurp, grim, libnotify-bin, wl-clipboard
 Description: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse.">> DEBIAN/control
 
 echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
