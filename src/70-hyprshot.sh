@@ -1,7 +1,7 @@
 #!/bin/bash
 version="1.3.0"
 project="hyprshot"
-revision="0~pre3"
+revision="0"
 
 cd build
 rm -Rf $project*	

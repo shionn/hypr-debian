@@ -221,6 +221,22 @@ SHA1: 2cd4f8dc0c692de55e0488e78a9b2d632205e1da
 MD5sum: 0af7dd1963f2c8e211f672bc88c0815e
 Description: A simple polkit authentication agent for Hyprland, written in QT/QML.
 
+Package: hyprshot
+Source: hyprshot
+Maintainer: Shionn<shionn@gmail.com>
+Homepage: https://github.com/Gustash/Hyprshot
+Version: 1.3.0-0
+Architecture: amd64
+Depends: hyprland, slurp, grim, libnotify-bin, wl-clipboard
+Priority: optional
+Section: graphics
+Filename: pool/main/h/hyprshot/hyprshot_1.3.0-0_amd64.deb
+Size: 3820
+SHA256: 290a69f4d88843ac5ed51bdfaca870919156d939d9b565c702f98f19e6edb073
+SHA1: 36b53901f27bcf6792d4bb82a740529a1cdbe213
+MD5sum: 6edfc752a58029e7e4a22ccbbb385830
+Description: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse.
+
 Package: hyprutils
 Source: hyprutils
 Maintainer: Shionn<shionn@gmail.com>
