@@ -76,7 +76,7 @@ a faire en priorité :
 - hyprpaper : wallpaper
 - xdg-desktop-portal-hyprland : une histoire de dbus
 - hyprqt6engine : qt6 encore
-- hyprshot (https://github.com/Gustash/Hyprshot)
+- hyprshot : Ajouter la dépendence jq
 - hyperlauncher
 - hypr (X11 vrsion)
 
