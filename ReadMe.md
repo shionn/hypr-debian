@@ -1,4 +1,7 @@
 
+/!\ Debian a repris l'integration de hyprlanbd dans forky, donc il n'ets plus necessaire d'utiliser ce repo /!\
+
+
 # Repo hyprland pour debian
 
 Attention je ne suis pas un spécialiste de la construction de paquets, tout n'est pas fait dans les règles de l'art. 
