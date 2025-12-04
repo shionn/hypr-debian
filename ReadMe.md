@@ -33,20 +33,20 @@ Pin-Priority: -1
 
 # Version courante
 
-- aquamarine : 0.9.5
-- hyprcursor : 0.1.13
-- hyprgraphics : 0.2.0
-- hypridle : 0.1.7
-- **hyprland : 0.51.1**
-- hyprland-protocols : 0.7.0
-- hyprland-qt-support : 0.1.0
-- hyprland-qtutils : 0.1.5
-- hyprlang : 0.6.4
-- hyprlock : 0.9.2
-- hyprpolkitagent : 0.1.3
-- hyprshot : 1.3.0
-- hyprutils : 0.10.0
-- hyprwayland-scanner : 0.4.5
+- aquamarine : 0.9.5 (retiree)
+- hyprcursor : 0.1.13 (retire)
+- hyprgraphics : 0.2.0 (retiree)
+- hypridle : 0.1.7 (retiree)
+- **hyprland : 0.51.1** (retiree)
+- hyprland-protocols : 0.7.0 (retiree)
+- hyprland-qt-support : 0.1.0 (retiree)
+- hyprland-qtutils : 0.1.5 (retiree)
+- hyprlang : 0.6.4 (retiree)
+- hyprlock : 0.9.2 (retiree)
+- hyprpolkitagent : 0.1.3 (retiree)
+- hyprshot : 1.3.1
+- hyprutils : 0.10.0 (retiree)
+- hyprwayland-scanner : 0.4.5 (retiree)
 
 
 # Historique récent
