@@ -225,16 +225,16 @@ Package: hyprshot
 Source: hyprshot
 Maintainer: Shionn<shionn@gmail.com>
 Homepage: https://github.com/Gustash/Hyprshot
-Version: 1.3.0-0
+Version: 1.3.0-1
 Architecture: amd64
-Depends: hyprland, slurp, grim, libnotify-bin, wl-clipboard
+Depends: hyprland, slurp, grim, libnotify-bin, wl-clipboard, jq
 Priority: optional
 Section: graphics
-Filename: pool/main/h/hyprshot/hyprshot_1.3.0-0_amd64.deb
-Size: 3820
-SHA256: 290a69f4d88843ac5ed51bdfaca870919156d939d9b565c702f98f19e6edb073
-SHA1: 36b53901f27bcf6792d4bb82a740529a1cdbe213
-MD5sum: 6edfc752a58029e7e4a22ccbbb385830
+Filename: pool/main/h/hyprshot/hyprshot_1.3.0-1_amd64.deb
+Size: 3828
+SHA256: 2006c3d0eb55bf7c3c7c65b40dd829a7e9fb0e800cea869ac3cf43e8d89b8d7c
+SHA1: 3b5427a06ff06b1d3ceaa43d6f8ec6c46761c4b2
+MD5sum: 60b7f2cdd032e94a3f46b0e0e7c6d258
 Description: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse.
 
 Package: hyprutils
